@@ -2,7 +2,7 @@
 id: 64185
 title: "Disable Ollie Styles"
 status: "publish"
-order: 3
+order: 4
 ---
 
 The Ollie block theme ships with several color palettes and typography presets that help you quickly customize your site. 
