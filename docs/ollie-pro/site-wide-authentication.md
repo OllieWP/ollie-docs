@@ -2,7 +2,7 @@
 id: 60234
 title: "Site-Wide Authentication"
 status: "publish"
-order: 5
+order: 6
 ---
 
 <!-- wp:block {"ref":59515,"content":{"Note Box Text":{"content":"\u003cstrong\u003eNote\u003c/strong\u003e: This is an advanced customization for Ollie Pro and generally not needed by the majority of Ollie Pro users. "}}} /-->

@@ -2,7 +2,7 @@
 id: 64515
 title: "Ollie Pro for Local and Staging"
 status: "publish"
-order: 6
+order: 7
 ---
 
 Many WordPress developers and agencies use temporary or staging environments during the development process. To provide a better user experience and prevent legitimate development work from consuming license activations, Ollie Pro automatically detects when it's running on these common development and staging platforms.

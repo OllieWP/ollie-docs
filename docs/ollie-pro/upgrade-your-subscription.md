@@ -2,7 +2,7 @@
 id: 60716
 title: "Upgrade Your Subscription"
 status: "publish"
-order: 7
+order: 8
 ---
 
 Need to build more sites with Ollie Pro? No problem! We've made it super easy to upgrade your subscription to get more site activations. Whether you're scaling up your freelance business or managing sites for multiple clients, we've got you covered.
