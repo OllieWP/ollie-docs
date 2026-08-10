@@ -2,7 +2,7 @@
 id: 60102
 title: "How to make a carousel in the block editor"
 status: "publish"
-order: 3
+order: 1
 ---
 
 <!-- wp:image {"id":59841,"sizeSlug":"full","linkDestination":"none","className":"is-style-media-boxed"} -->

@@ -46,7 +46,7 @@ for ( const path of walk( docsDir ) ) {
 		console.error( `! ${ rel }: missing title in front matter — skipped` );
 		continue;
 	}
-	items.push( { path, rel, slug, parentSlug, meta, body } );
+	items.push( { path, rel, slug, parentSlug, isIndex, meta, body } );
 }
 
 // Depth-first so parents are created before their children.
@@ -55,13 +55,37 @@ items.sort( ( a, b ) => ( a.parentSlug ? 1 : 0 ) - ( b.parentSlug ? 1 : 0 ) );
 const remote = await fetchAllDocs();
 const remoteById = new Map( remote.map( ( d ) => [ d.id, d ] ) );
 const idBySlug = new Map( remote.map( ( d ) => [ d.slug, d.id ] ) );
+
+// Parents resolve from the local index.md first: a section folder may be
+// renamed locally (slug change pending sync), so the remote slug map alone
+// would miss it.
+const parentIdByFolder = new Map(
+	items
+		.filter( ( i ) => i.isIndex && i.meta.id )
+		.map( ( i ) => [ i.slug, i.meta.id ] )
+);
 const localIds = new Set();
 let changed = 0;
 
 for ( const item of items ) {
 	const content = markdownToBlocks( item.body );
-	const parentId = item.parentSlug ? idBySlug.get( item.parentSlug ) : 0;
+	let parentId = item.parentSlug
+		? parentIdByFolder.get( item.parentSlug ) ?? idBySlug.get( item.parentSlug )
+		: 0;
 	if ( item.parentSlug && ! parentId ) {
+		// In a live run the parent index.md is created before its children
+		// reach this point; a dry run can't create it, so a pending parent
+		// is expected there rather than an error.
+		const pendingParent = items.some(
+			( i ) => i.isIndex && i.slug === item.parentSlug && ! i.meta.id
+		);
+		if ( dryRun && pendingParent ) {
+			changed++;
+			console.log(
+				`would update  ${ item.rel } (once parent "${ item.parentSlug }" is created)`
+			);
+			continue;
+		}
 		console.error(
 			`! ${ item.rel }: parent "${ item.parentSlug }" not found on site — skipped`
 		);
@@ -114,6 +138,9 @@ for ( const item of items ) {
 			const created = await res.json();
 			localIds.add( created.id );
 			idBySlug.set( created.slug, created.id );
+			if ( item.isIndex ) {
+				parentIdByFolder.set( item.slug, created.id );
+			}
 			// Write the new id back into the file's front matter.
 			writeFileSync(
 				item.path,

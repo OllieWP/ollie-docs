@@ -2,7 +2,7 @@
 id: 60104
 title: "Ollie Support"
 status: "publish"
-order: 0
+order: 3
 ---
 
 If you need assistance with the Ollie, there are a couple of ways to get help depending on whether you are using the free block theme or Ollie Pro. 

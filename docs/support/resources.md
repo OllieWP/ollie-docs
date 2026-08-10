@@ -2,7 +2,7 @@
 id: 60105
 title: "Resources"
 status: "publish"
-order: 0
+order: 4
 ---
 
 Check out the following resources if you need help beyond what we have here in the docs.

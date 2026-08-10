@@ -1,6 +1,6 @@
 ---
 id: 60239
-title: "Ollie Pro Intro"
+title: "Welcome to Ollie Pro"
 status: "publish"
 order: 0
 ---

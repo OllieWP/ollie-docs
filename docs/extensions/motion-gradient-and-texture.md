@@ -2,7 +2,7 @@
 id: 67359
 title: "Motion Gradient and Texture"
 status: "draft"
-order: 5
+order: 0
 ---
 
 Ollie Pro adds two design superpowers to the WordPress Cover block: **Motion Gradient**, which generates beautiful, animated gradient backgrounds with a click, and **Texture**, which layers dots, grids, grain, or halftone patterns over any cover background. Both are pure CSS on the frontend — no scripts, no images to upload, no performance cost.

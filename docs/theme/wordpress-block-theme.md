@@ -2,8 +2,14 @@
 id: 60106
 title: "WordPress Block Themes"
 status: "publish"
-order: 1
+order: 0
 ---
+
+<!-- wp:embed {"url":"https://www.youtube.com/watch?v=D7GUoX2XU1k","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+https://www.youtube.com/watch?v=D7GUoX2XU1k
+</div></figure>
+<!-- /wp:embed -->
 
 Once you activate Ollie, it will largely behave like any other traditional WordPress theme. You can create posts and pages just like you always have. However, as a block theme, Ollie also supports powerful new features like the site editor, patterns, global styles, and more. 
 

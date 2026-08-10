@@ -1,9 +1,15 @@
 ---
 id: 60233
-title: "Ollie Pro Pattern Library"
+title: "Pattern Library"
 status: "publish"
 order: 2
 ---
+
+<!-- wp:embed {"url":"https://www.youtube.com/watch?v=YhhGucYbkkE","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+https://www.youtube.com/watch?v=YhhGucYbkkE
+</div></figure>
+<!-- /wp:embed -->
 
 The flagship feature of Ollie Pro is our growing collection of expertly-crafted WordPress patterns. WordPress patterns are pre-designed components that make it easy and fun to create beautiful pages and posts quickly. Patterns can be as small as a call-to-action box, or as big as a full page layout. 
 
@@ -88,3 +94,15 @@ In the pattern details sidebar, you'll find a description of the patter, several
 <li><strong>Add/Remove from Favorites</strong> - Favorite a pattern so you can quickly access it later. Your favorites are available to any site you have Ollie Pro installed on.</li>
 <!-- /wp:list-item --></ul>
 <!-- /wp:list -->
+
+<!-- wp:query {"queryId":0,"query":{"perPage":10,"pages":0,"offset":0,"postType":"documentation","order":"desc","orderBy":"menu_order","author":"","search":"","exclude":[],"sticky":"","inherit":false,"parents":[60233],"format":[],"include_posts":[],"meta_query":{}},"namespace":"advanced-query-loop"} -->
+<div class="wp-block-query"><!-- wp:post-template -->
+<!-- wp:group {"style":{"border":{"width":"1px","color":"#e4e1fe","radius":"10px"},"spacing":{"padding":{"top":"var:preset|spacing|medium","bottom":"var:preset|spacing|medium","left":"var:preset|spacing|medium","right":"var:preset|spacing|medium"},"blockGap":"var:preset|spacing|small"},"dimensions":{"minHeight":""}},"layout":{"type":"constrained","justifyContent":"left"}} -->
+<div class="wp-block-group has-border-color" style="border-color:#e4e1fe;border-width:1px;border-radius:10px;padding-top:var(--wp--preset--spacing--medium);padding-right:var(--wp--preset--spacing--medium);padding-bottom:var(--wp--preset--spacing--medium);padding-left:var(--wp--preset--spacing--medium)"><!-- wp:post-title {"isLink":true,"fontSize":"base","fontFamily":"primary"} /-->
+
+<!-- wp:post-excerpt {"moreText":"","showMoreOnNewLine":false,"className":"is-style-excerpt-truncate-2","style":{"elements":{"link":{"color":{"text":"var:preset|color|primary"}}}}} /-->
+
+<!-- wp:read-more {"content":"Read More","style":{"elements":{"link":{"color":{"text":"var:preset|color|primary"}}}},"textColor":"primary"} /--></div>
+<!-- /wp:group -->
+<!-- /wp:post-template --></div>
+<!-- /wp:query -->

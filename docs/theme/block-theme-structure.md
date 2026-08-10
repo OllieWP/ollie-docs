@@ -2,7 +2,7 @@
 id: 60100
 title: "Block Theme Structure"
 status: "publish"
-order: 2
+order: 1
 ---
 
 A WordPress block theme folder contains various subdirectories and files that define the theme's appearance and functionality. Here's an overview of the typical contents you will find in a block theme folder. 

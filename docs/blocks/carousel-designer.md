@@ -2,8 +2,14 @@
 id: 66891
 title: "Carousel Designer"
 status: "publish"
-order: 4
+order: 0
 ---
+
+<!-- wp:embed {"url":"https://www.youtube.com/watch?v=rXw5i0P7_uw","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+https://www.youtube.com/watch?v=rXw5i0P7_uw
+</div></figure>
+<!-- /wp:embed -->
 
 The Ollie Carousel is a block-native carousel suite included with Ollie Pro. Build hero sliders, testimonials, logo marquees, video carousels, and self-updating post carousels — all inside the block editor, using any blocks you like.
 

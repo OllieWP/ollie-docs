@@ -2,7 +2,7 @@
 id: 60101
 title: "Ollie Color Palette"
 status: "publish"
-order: 3
+order: 2
 ---
 
 <!-- wp:embed {"url":"https://youtu.be/5w260Nu5bGU","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->
