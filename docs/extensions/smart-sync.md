@@ -2,7 +2,7 @@
 id: 67380
 title: "Smart Sync"
 status: "publish"
-order: 1
+order: 2
 ---
 
 <!-- wp:embed {"url":"https://www.youtube.com/watch?v=0OHoSuj4Mcw","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->

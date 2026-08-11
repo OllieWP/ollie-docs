@@ -2,7 +2,7 @@
 id: 67375
 title: "Hover Colors"
 status: "publish"
-order: 5
+order: 6
 ---
 
 <!-- wp:embed {"url":"https://www.youtube.com/watch?v=MgwhOSMA1zs","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->

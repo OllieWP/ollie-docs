@@ -2,7 +2,7 @@
 id: 64510
 title: "How to make a horizontal scroll carousel in the block editor"
 status: "draft"
-order: 2
+order: 91
 ---
 
 Lots of folks have written in asking how we made the carousel on the <a href="http://olliewp.com/pro" title="">Ollie Pro</a> page. It's a combination of native blocks in the editor and some custom CSS to make it shine.

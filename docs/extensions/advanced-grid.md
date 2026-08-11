@@ -2,7 +2,7 @@
 id: 67370
 title: "Advanced Grid Controls"
 status: "publish"
-order: 12
+order: 13
 ---
 
 <!-- wp:embed {"url":"https://www.youtube.com/watch?v=PHjaO4uOwxE","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->

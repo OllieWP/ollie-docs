@@ -2,7 +2,7 @@
 id: 60233
 title: "Pattern Library"
 status: "publish"
-order: 2
+order: 1
 ---
 
 <!-- wp:embed {"url":"https://www.youtube.com/watch?v=YhhGucYbkkE","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->

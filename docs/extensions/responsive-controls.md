@@ -2,7 +2,7 @@
 id: 67379
 title: "Responsive Controls"
 status: "publish"
-order: 13
+order: 14
 ---
 
 <!-- wp:embed {"url":"https://www.youtube.com/watch?v=5Wv_3MfU7ws","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->

@@ -2,7 +2,7 @@
 id: 67374
 title: "CSS Class Manager"
 status: "publish"
-order: 4
+order: 5
 ---
 
 <!-- wp:embed {"url":"https://www.youtube.com/watch?v=z3fcun2hiOM","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->

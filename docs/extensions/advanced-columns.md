@@ -2,7 +2,7 @@
 id: 67369
 title: "Advanced Column Controls"
 status: "publish"
-order: 11
+order: 12
 ---
 
 <!-- wp:embed {"url":"https://www.youtube.com/watch?v=bAh5h221qiw","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->
