@@ -1,7 +1,7 @@
 ---
 id: 67416
 title: "Site Editor Basics"
-status: "draft"
+status: "publish"
 order: 2
 ---
 

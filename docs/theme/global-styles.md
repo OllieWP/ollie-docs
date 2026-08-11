@@ -1,7 +1,7 @@
 ---
 id: 67420
 title: "Global Styles"
-status: "draft"
+status: "publish"
 order: 3
 ---
 

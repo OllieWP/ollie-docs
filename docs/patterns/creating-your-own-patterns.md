@@ -1,7 +1,7 @@
 ---
 id: 67417
 title: "Creating Your Own Patterns"
-status: "draft"
+status: "publish"
 order: 2
 ---
 

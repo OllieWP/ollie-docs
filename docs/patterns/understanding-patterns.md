@@ -1,7 +1,7 @@
 ---
 id: 67418
 title: "Understanding Patterns"
-status: "draft"
+status: "publish"
 order: 1
 ---
 

@@ -1,7 +1,7 @@
 ---
 id: 67415
 title: "Customizing Your Header and Footer"
-status: "draft"
+status: "publish"
 order: 3
 ---
 
