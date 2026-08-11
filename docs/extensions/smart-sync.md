@@ -1,4 +1,5 @@
 ---
+id: 67380
 title: "Smart Sync"
 status: "draft"
 order: 1

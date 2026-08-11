@@ -9,6 +9,9 @@
 
 defined( 'ABSPATH' ) || exit;
 
+// Priority 1: run before core's canonical/old-slug guessing (priority 10),
+// which otherwise guesses wrong for section URLs like /docs/ollie-pro/
+// (it prefix-matches to /docs/…/ollie-pro-dashboard/).
 add_action( 'template_redirect', function () {
 	if ( ! is_404() ) {
 		return;
@@ -42,4 +45,4 @@ add_action( 'template_redirect', function () {
 		wp_safe_redirect( home_url( $map[ $path ] ), 301 );
 		exit;
 	}
-} );
+}, 1 );
