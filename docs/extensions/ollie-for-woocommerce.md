@@ -2,7 +2,7 @@
 id: 67410
 title: "Ollie for WooCommerce"
 status: "publish"
-order: 16
+order: 17
 excerpt: "Block-built store templates, shop patterns, and one-click product card layouts."
 ---
 
