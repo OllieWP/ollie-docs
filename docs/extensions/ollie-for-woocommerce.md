@@ -1,7 +1,7 @@
 ---
 id: 67410
 title: "Ollie for WooCommerce"
-status: "draft"
+status: "publish"
 order: 15
 ---
 
