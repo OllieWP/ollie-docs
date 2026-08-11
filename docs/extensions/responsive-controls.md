@@ -3,6 +3,7 @@ id: 67379
 title: "Responsive Controls"
 status: "publish"
 order: 14
+excerpt: "Set per-device font sizes, spacing, and alignment right from the editor's device preview."
 ---
 
 <!-- wp:embed {"url":"https://www.youtube.com/watch?v=5Wv_3MfU7ws","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->

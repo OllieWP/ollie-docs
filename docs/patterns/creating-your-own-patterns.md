@@ -3,6 +3,7 @@ id: 67417
 title: "Creating Your Own Patterns"
 status: "publish"
 order: 2
+excerpt: "Turn any design into a reusable pattern \u2014 or a time-saving text snippet."
 ---
 
 <!-- wp:embed {"url":"https://www.youtube.com/watch?v=pWpnMD2MX7w","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->

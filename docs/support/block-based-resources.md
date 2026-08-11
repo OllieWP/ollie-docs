@@ -3,6 +3,7 @@ id: 64507
 title: "Block Based Resources"
 status: "publish"
 order: 5
+excerpt: "A curated list of block-based WordPress resources, tools, and reading."
 ---
 
 Here are a list of plugins that will come in handy when building block-based websites with Ollie and Ollie Pro. 

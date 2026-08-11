@@ -3,6 +3,7 @@ id: 60100
 title: "Block Theme Structure"
 status: "publish"
 order: 1
+excerpt: "How the Ollie theme is organized \u2014 templates, template parts, and patterns."
 ---
 
 A WordPress block theme folder contains various subdirectories and files that define the theme's appearance and functionality. Here's an overview of the typical contents you will find in a block theme folder. 

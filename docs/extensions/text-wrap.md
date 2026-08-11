@@ -3,6 +3,7 @@ id: 67381
 title: "Text Wrap"
 status: "publish"
 order: 9
+excerpt: "Fix orphaned words and ragged headlines with one-click Pretty and Balance wrapping."
 ---
 
 <!-- wp:embed {"url":"https://www.youtube.com/watch?v=6AMw_M8xWUk","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->

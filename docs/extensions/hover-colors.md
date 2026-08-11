@@ -3,6 +3,7 @@ id: 67375
 title: "Hover Colors"
 status: "publish"
 order: 6
+excerpt: "Add hover text, background, and border colors to any block, with full transition control."
 ---
 
 <!-- wp:embed {"url":"https://www.youtube.com/watch?v=MgwhOSMA1zs","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->

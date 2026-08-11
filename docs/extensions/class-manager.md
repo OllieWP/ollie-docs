@@ -3,6 +3,7 @@ id: 67374
 title: "CSS Class Manager"
 status: "publish"
 order: 5
+excerpt: "Manage reusable CSS classes with a real editor for base, hover, and responsive styles."
 ---
 
 <!-- wp:embed {"url":"https://www.youtube.com/watch?v=z3fcun2hiOM","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->

@@ -3,6 +3,7 @@ id: 67376
 title: "Keyboard Shortcuts"
 status: "publish"
 order: 10
+excerpt: "Navigate nested block layouts at speed with parent and tree-traversal shortcuts."
 ---
 
 <!-- wp:embed {"url":"https://www.youtube.com/watch?v=QYvOZf4dyTI","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->

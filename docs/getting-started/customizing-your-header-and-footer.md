@@ -3,6 +3,7 @@ id: 67415
 title: "Customizing Your Header and Footer"
 status: "publish"
 order: 3
+excerpt: "Edit, restyle, or completely swap your site's header and footer designs."
 ---
 
 <!-- wp:embed {"url":"https://www.youtube.com/watch?v=sp3gZha1gRY","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->

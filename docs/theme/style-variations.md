@@ -3,6 +3,7 @@ id: 67384
 title: "Style Variations"
 status: "publish"
 order: 2
+excerpt: "Change your site's entire look in one click with Ollie's style variations."
 ---
 
 <!-- wp:embed {"url":"https://www.youtube.com/watch?v=mePV-NJC_Ps","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->

@@ -3,6 +3,7 @@ id: 60239
 title: "Welcome to Ollie Pro"
 status: "publish"
 order: 0
+excerpt: "Learn everything you need to know about Ollie Pro and your Ollie Pro account."
 ---
 
 <!-- wp:embed {"url":"https://www.youtube.com/watch?v=aCgKQAPali0","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->

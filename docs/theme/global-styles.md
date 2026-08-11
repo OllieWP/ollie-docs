@@ -3,6 +3,7 @@ id: 67420
 title: "Global Styles"
 status: "publish"
 order: 3
+excerpt: "Set typography, colors, and spacing once and cascade them across your whole site."
 ---
 
 <!-- wp:embed {"url":"https://www.youtube.com/watch?v=6RavZxNFy2Y","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->

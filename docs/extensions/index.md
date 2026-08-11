@@ -3,6 +3,7 @@ id: 64859
 title: "Extensions"
 status: "publish"
 order: 2
+excerpt: "Explore the Ollie Pro extensions that supercharge the WordPress block editor."
 ---
 
 <!-- wp:embed {"url":"https://youtu.be/qq2DLc43pTk","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->

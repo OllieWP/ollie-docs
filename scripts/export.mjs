@@ -66,6 +66,7 @@ for ( const doc of docs ) {
 			title: doc.title.raw,
 			status: doc.status,
 			order: doc.menu_order,
+			excerpt: doc.excerpt?.raw || undefined,
 		},
 		body
 	);

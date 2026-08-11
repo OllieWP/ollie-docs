@@ -3,6 +3,7 @@ id: 60106
 title: "WordPress Block Themes"
 status: "publish"
 order: 0
+excerpt: "Learn the basics of WordPress block themes and how to build with them."
 ---
 
 <!-- wp:embed {"url":"https://www.youtube.com/watch?v=D7GUoX2XU1k","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->

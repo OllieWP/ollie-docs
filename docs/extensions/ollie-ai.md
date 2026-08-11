@@ -3,6 +3,7 @@ id: 67378
 title: "Ollie AI"
 status: "publish"
 order: 15
+excerpt: "Rewrite content with AI in the editor and connect assistants like Claude to your site."
 ---
 
 <!-- wp:embed {"url":"https://www.youtube.com/watch?v=eTP4KfJb9PQ","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->

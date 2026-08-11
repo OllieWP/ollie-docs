@@ -3,6 +3,7 @@ id: 66891
 title: "Carousel Designer"
 status: "publish"
 order: 0
+excerpt: "Build hero sliders, testimonials, logo marquees, and dynamic post carousels with blocks."
 ---
 
 <!-- wp:embed {"url":"https://www.youtube.com/watch?v=rXw5i0P7_uw","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->

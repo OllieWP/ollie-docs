@@ -3,6 +3,7 @@ id: 67418
 title: "Understanding Patterns"
 status: "publish"
 order: 1
+excerpt: "What patterns are, how synced patterns differ, and when to reach for each."
 ---
 
 <!-- wp:embed {"url":"https://www.youtube.com/watch?v=w8DehSH1_PA","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->

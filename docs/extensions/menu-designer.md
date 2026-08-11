@@ -3,6 +3,7 @@ id: 67377
 title: "Menu Designer"
 status: "publish"
 order: 4
+excerpt: "Design dropdown menus, mega menus, and mobile menus with any WordPress block."
 ---
 
 <!-- wp:embed {"url":"https://www.youtube.com/watch?v=UXWOafpBn38","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->

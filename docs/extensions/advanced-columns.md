@@ -3,6 +3,7 @@ id: 67369
 title: "Advanced Column Controls"
 status: "publish"
 order: 12
+excerpt: "Control the exact order your columns stack in on mobile devices."
 ---
 
 <!-- wp:embed {"url":"https://www.youtube.com/watch?v=bAh5h221qiw","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->

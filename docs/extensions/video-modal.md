@@ -3,6 +3,7 @@ id: 67382
 title: "Video Modal"
 status: "publish"
 order: 8
+excerpt: "Turn Cover and Button blocks into click-to-play video lightboxes."
 ---
 
 <!-- wp:embed {"url":"https://www.youtube.com/watch?v=BTf3XX68-5I","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->

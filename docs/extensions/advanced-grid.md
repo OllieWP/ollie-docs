@@ -3,6 +3,7 @@ id: 67370
 title: "Advanced Grid Controls"
 status: "publish"
 order: 13
+excerpt: "Add custom responsive breakpoints to WordPress Grid layouts \u2014 no CSS required."
 ---
 
 <!-- wp:embed {"url":"https://www.youtube.com/watch?v=PHjaO4uOwxE","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->

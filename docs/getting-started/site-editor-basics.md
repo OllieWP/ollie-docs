@@ -3,6 +3,7 @@ id: 67416
 title: "Site Editor Basics"
 status: "publish"
 order: 2
+excerpt: "Learn your way around the editor that powers every part of your Ollie site."
 ---
 
 <!-- wp:embed {"url":"https://www.youtube.com/watch?v=51-FInsYsGs","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->

@@ -101,6 +101,7 @@ for ( const item of items ) {
 		status: item.meta.status || 'publish',
 		menu_order: item.meta.order ?? 0,
 		parent: parentId,
+		excerpt: item.meta.excerpt ?? '',
 		content,
 	};
 
@@ -116,6 +117,7 @@ for ( const item of items ) {
 		localIds.add( existing.id );
 		const same =
 			existing.content.raw === content &&
+			( existing.excerpt?.raw ?? '' ) === payload.excerpt &&
 			existing.title.raw === payload.title &&
 			existing.slug === payload.slug &&
 			existing.status === payload.status &&

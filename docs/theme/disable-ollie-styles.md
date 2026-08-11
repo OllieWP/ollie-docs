@@ -3,6 +3,7 @@ id: 64185
 title: "Disable Ollie Styles"
 status: "publish"
 order: 5
+excerpt: "Turn off Ollie's opinionated block styles when you want full manual control."
 ---
 
 The Ollie block theme ships with several color palettes and typography presets that help you quickly customize your site. 

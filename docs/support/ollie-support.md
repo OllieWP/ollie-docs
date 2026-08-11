@@ -3,6 +3,7 @@ id: 60104
 title: "Ollie Support"
 status: "publish"
 order: 3
+excerpt: "How to reach the Ollie team when you need a hand."
 ---
 
 If you need assistance with the Ollie, there are a couple of ways to get help depending on whether you are using the free block theme or Ollie Pro. 

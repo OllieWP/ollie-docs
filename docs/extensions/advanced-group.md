@@ -3,6 +3,7 @@ id: 67371
 title: "Advanced Group Controls"
 status: "publish"
 order: 11
+excerpt: "Clickable group cards, mobile row stacking, and smarter sticky headers for Group blocks."
 ---
 
 <!-- wp:embed {"url":"https://www.youtube.com/watch?v=x2iPdgkgzfM","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->

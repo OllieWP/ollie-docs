@@ -3,6 +3,7 @@ id: 67372
 title: "Animation Designer"
 status: "publish"
 order: 3
+excerpt: "Add entrance and hover animations that trigger on scroll, no code required."
 ---
 
 <!-- wp:embed {"url":"https://www.youtube.com/watch?v=gMcDO9rCNgc","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->

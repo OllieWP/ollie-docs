@@ -3,6 +3,7 @@ id: 60233
 title: "Pattern Library"
 status: "publish"
 order: 1
+excerpt: "Start building beautiful pages way faster with the Ollie Pro pattern library."
 ---
 
 <!-- wp:embed {"url":"https://www.youtube.com/watch?v=YhhGucYbkkE","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->

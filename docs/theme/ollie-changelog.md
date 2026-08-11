@@ -3,6 +3,7 @@ id: 60128
 title: "Ollie Updates"
 status: "publish"
 order: 6
+excerpt: "What's new in each release of the Ollie theme."
 ---
 
 The latest and historical updates to the Ollie block theme and the Ollie Pro plugin, including feature additions, bug fixes, and improvements.
