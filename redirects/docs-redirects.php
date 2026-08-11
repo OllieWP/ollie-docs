@@ -33,12 +33,14 @@ add_action( 'template_redirect', function () {
 		'/docs/ollie-pro/site-wide-authentication' => '/docs/support/site-wide-authentication/',
 		'/docs/ollie-pro/using-ollie-pro-on-local-and-staging-sites' => '/docs/support/using-ollie-pro-on-local-and-staging-sites/',
 		'/docs/ollie-pro/upgrade-your-subscription' => '/docs/support/upgrade-your-subscription/',
-		'/docs/how-to-make-a-carousel-in-the-block-editor' => '/docs/blocks/how-to-make-a-carousel-in-the-block-editor/',
-		'/docs/how-to-make-a-horizontal-scroll-carousel-in-the-block-editor' => '/docs/blocks/how-to-make-a-horizontal-scroll-carousel-in-the-block-editor/',
+		'/docs/how-to-make-a-carousel-in-the-block-editor' => '/docs/blocks/carousel-designer/',
+		'/docs/how-to-make-a-horizontal-scroll-carousel-in-the-block-editor' => '/docs/blocks/carousel-designer/',
 		'/docs/general' => '/docs/support/',
 		'/docs/general/ollie-support' => '/docs/support/ollie-support/',
 		'/docs/general/resources' => '/docs/support/resources/',
 		'/docs/block-based-resources' => '/docs/support/block-based-resources/',
+		'/docs/blocks/how-to-make-a-carousel-in-the-block-editor' => '/docs/blocks/carousel-designer/',
+		'/docs/blocks/how-to-make-a-horizontal-scroll-carousel-in-the-block-editor' => '/docs/blocks/carousel-designer/',
 	);
 	$path = untrailingslashit( wp_parse_url( $_SERVER['REQUEST_URI'] ?? '', PHP_URL_PATH ) ?? '' );
 	if ( isset( $map[ $path ] ) ) {
