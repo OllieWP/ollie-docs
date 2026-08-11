@@ -2,7 +2,7 @@
 id: 60101
 title: "Ollie Color Palette"
 status: "publish"
-order: 3
+order: 4
 ---
 
 <!-- wp:embed {"url":"https://youtu.be/5w260Nu5bGU","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->
@@ -2237,3 +2237,13 @@ Check out the global style video tutorial below to learn more about customizing 
 <!-- /wp:buttons --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->
+
+## Designing with Color Cascading
+
+The palette really shines when you lean on cascading: because sections, cards, and patterns reference palette slots instead of fixed colors, remixing a page is as simple as swapping which slot a section uses. Watch how patterns and color cascading combine into genuinely unique designs:
+
+<!-- wp:embed {"url":"https://www.youtube.com/watch?v=9crHeBMv1i4","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+https://www.youtube.com/watch?v=9crHeBMv1i4
+</div></figure>
+<!-- /wp:embed -->

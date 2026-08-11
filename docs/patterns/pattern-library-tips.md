@@ -2,7 +2,7 @@
 id: 67383
 title: "Pattern Library Tips"
 status: "publish"
-order: 1
+order: 3
 ---
 
 Once you know your way around the Ollie Pattern Library, a few power features make it dramatically faster to go from blank page to finished design. Here are the three biggest, each with a quick video.

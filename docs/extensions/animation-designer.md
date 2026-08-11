@@ -50,3 +50,13 @@ Dialed in something you love? Use **Save As Preset** to store the whole configur
 - Visitors who have reduced motion enabled in their system settings automatically see your content with no animations at all — no setup required.
 - Animations run on lightweight, dependency-free code that stays inactive on pages without animated blocks.
 - Fade In Words previews on the frontend rather than in the editor canvas.
+
+## Watch the Full Walkthrough
+
+For a complete tour of building animated sections — entrance effects, scroll triggers, and sequential reveals in a real layout — watch the full Animation Designer walkthrough:
+
+<!-- wp:embed {"url":"https://www.youtube.com/watch?v=pwDBC4OWVc4","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+https://www.youtube.com/watch?v=pwDBC4OWVc4
+</div></figure>
+<!-- /wp:embed -->

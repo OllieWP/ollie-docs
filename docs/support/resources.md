@@ -112,3 +112,13 @@ Ollie was created by&nbsp;[Mike McAlister](https://mikemcalister.com/)&nbsp;and&
 <!-- wp:separator {"className":"is-style-separator-dotted","style":{"spacing":{"margin":{"top":"var:preset|spacing|large","bottom":"var:preset|spacing|large"}}},"backgroundColor":"main-accent"} -->
 <hr class="wp-block-separator has-text-color has-main-accent-color has-alpha-channel-opacity has-main-accent-background-color has-background is-style-separator-dotted" style="margin-top:var(--wp--preset--spacing--large);margin-bottom:var(--wp--preset--spacing--large)"/>
 <!-- /wp:separator -->
+
+## Free Block Theme Development Course
+
+Want to go deeper than using block themes — and learn how they're actually built? Our free WordPress Block Theme Development course walks through building a complete block theme from scratch:
+
+<!-- wp:embed {"url":"https://www.youtube.com/watch?v=2DgZd9BQljI","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+https://www.youtube.com/watch?v=2DgZd9BQljI
+</div></figure>
+<!-- /wp:embed -->
