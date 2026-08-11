@@ -82,17 +82,42 @@ export function buildSidebar( sidebarRaw, sections ) {
 	} );
 
 	// Everything between the accordion container div and its close is the
-	// item list; swap it wholesale.
-	const containerOpen = accordion.indexOf( '>', accordion.indexOf( '<div role="group" class="wp-block-accordion"' ) ) + 1;
+	// item list; swap it wholesale. The container tag is matched by class
+	// token (styling in the Site Editor adds classes and inline styles),
+	// and any failure to find it must throw — a blind splice here once
+	// destroyed the container tag entirely.
+	const containerMatch = accordion.match(
+		/<div[^>]*class="(?:[^"]* )?wp-block-accordion(?: [^"]*)?"[^>]*>/
+	);
+	if ( ! containerMatch ) {
+		throw new Error( 'Accordion container div not found in the docs sidebar.' );
+	}
+	const containerOpen = containerMatch.index + containerMatch[ 0 ].length;
 	const containerClose = accordion.lastIndexOf( '</div>' );
+	if ( containerClose <= containerOpen ) {
+		throw new Error( 'Accordion container close not found in the docs sidebar.' );
+	}
 	const newAccordion =
 		accordion.slice( 0, containerOpen ) +
 		items.join( '\n\n' ) +
 		accordion.slice( containerClose );
 
-	return (
+	const result =
 		sidebarRaw.slice( 0, accordionSpan[ 0 ] ) +
 		newAccordion +
-		sidebarRaw.slice( accordionSpan[ 1 ] )
-	);
+		sidebarRaw.slice( accordionSpan[ 1 ] );
+
+	// Structural verification: refuse to emit markup that lost the
+	// container, changed div balance, or has the wrong item count.
+	const balance = ( s ) =>
+		( s.match( /<div\b/g ) || [] ).length - ( s.match( /<\/div>/g ) || [] ).length;
+	const itemCount = ( result.match( /<!-- wp:accordion-item/g ) || [] ).length;
+	if (
+		balance( result ) !== balance( sidebarRaw ) ||
+		itemCount !== sections.length ||
+		! /<div[^>]*class="(?:[^"]* )?wp-block-accordion(?: [^"]*)?"[^>]*>/.test( result )
+	) {
+		throw new Error( 'Docs sidebar regeneration failed structural verification.' );
+	}
+	return result;
 }

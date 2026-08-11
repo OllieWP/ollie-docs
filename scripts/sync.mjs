@@ -190,7 +190,13 @@ if ( pendingSections.length && dryRun ) {
 	if ( ! part ) {
 		console.error( `! Template part "${ SIDEBAR_SLUG }" not found — sidebar skipped.` );
 	} else {
-		const updated = buildSidebar( part.content.raw, sections );
+		let updated;
+		try {
+			updated = buildSidebar( part.content.raw, sections );
+		} catch ( err ) {
+			console.error( `! Sidebar not updated: ${ err.message }` );
+			updated = part.content.raw;
+		}
 		if ( updated !== part.content.raw ) {
 			changed++;
 			console.log(
