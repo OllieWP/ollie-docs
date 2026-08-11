@@ -76,8 +76,10 @@ export function buildSidebar( sidebarRaw, sections ) {
 			`$1<strong>${ safeTitle }</strong>$2`
 		);
 		item = item.replace( /"parents":\[\d+\]/, `"parents":[${ section.id }]` );
-		// Normalize ordering drift between hand-built items.
+		// Normalize ordering drift between hand-built items, and lift the
+		// query's 10-item default so large sections list every doc.
 		item = item.replace( '"order":"desc"', '"order":"asc"' );
+		item = item.replace( '"perPage":10,', '"perPage":100,' );
 		return item;
 	} );
 
