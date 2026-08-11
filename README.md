@@ -23,6 +23,13 @@ site docs that have no local file, and never deletes anything. `export`
 treats the site as the source of truth and overwrites local files — use it
 for the initial import or to absorb edits made in wp-admin.
 
+`sync` also regenerates the **docs sidebar** (the `docs-sidebar` template
+part on the site): one accordion section per top-level folder, titled and
+ordered from each section's `index.md` front matter. The first existing
+accordion item is used as the design template, so restyling the sidebar in
+the Site Editor carries forward — but the section list itself is owned by
+this repo and will overwrite manual section edits.
+
 ## File layout
 
 ```

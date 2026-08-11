@@ -62,6 +62,10 @@ swap the id inside `"parents":[…]`, and sync again.
 
 ## 5. Verify
 
+- The docs sidebar shows the six new sections. Sync regenerates the
+  `docs-sidebar` template part automatically in the same run (dry-run
+  can't preview the Blocks section id, so it just notes the sidebar will
+  update once Blocks is created).
 - Section landing pages list their children (query loops carry the right
   parent ids).
 - Docs navigation/sidebar reflects the new tree (menu orders are set in

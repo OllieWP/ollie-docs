@@ -19,6 +19,9 @@ import {
 	serializeFrontMatter,
 } from './lib/convert.mjs';
 import { fetchAllDocs, wpFetch, ROOT } from './lib/wp.mjs';
+import { buildSidebar } from './lib/sidebar.mjs';
+
+const SIDEBAR_SLUG = 'docs-sidebar';
 
 const dryRun = process.argv.includes( '--dry-run' );
 const docsDir = join( ROOT, 'docs' );
@@ -150,6 +153,55 @@ for ( const item of items ) {
 				)
 			);
 			console.log( `           ${ item.rel } → id ${ created.id }` );
+		}
+	}
+}
+
+// Regenerate the docs sidebar template part from the section tree. The
+// sidebar is derived data: one accordion item per top-level section, in
+// menu order, each filtering to that section's post id.
+const sections = items
+	.filter( ( i ) => i.isIndex && ! i.parentSlug )
+	.sort( ( a, b ) => ( a.meta.order ?? 0 ) - ( b.meta.order ?? 0 ) )
+	.map( ( i ) => ( {
+		title: i.meta.title,
+		id: i.meta.id ?? parentIdByFolder.get( i.slug ),
+	} ) );
+const pendingSections = sections.filter( ( s ) => ! s.id );
+if ( pendingSections.length && dryRun ) {
+	console.log(
+		`would update  docs sidebar (after "${ pendingSections
+			.map( ( s ) => s.title )
+			.join( '", "' ) }" ${ pendingSections.length === 1 ? 'is' : 'are' } created)`
+	);
+} else if ( pendingSections.length ) {
+	console.error(
+		`! Sidebar not updated — sections missing ids: ${ pendingSections
+			.map( ( s ) => s.title )
+			.join( ', ' ) }`
+	);
+} else {
+	const partsRes = await wpFetch( '/template-parts?context=edit' );
+	const part = ( await partsRes.json() ).find(
+		( p ) => p.slug === SIDEBAR_SLUG
+	);
+	if ( ! part ) {
+		console.error( `! Template part "${ SIDEBAR_SLUG }" not found — sidebar skipped.` );
+	} else {
+		const updated = buildSidebar( part.content.raw, sections );
+		if ( updated !== part.content.raw ) {
+			changed++;
+			console.log(
+				`${ dryRun ? 'would update' : 'updating' }  docs sidebar (${ sections
+					.map( ( s ) => s.title )
+					.join( ' · ' ) })`
+			);
+			if ( ! dryRun ) {
+				await wpFetch(
+					`/template-parts/${ encodeURIComponent( part.id ) }`,
+					{ method: 'POST', body: JSON.stringify( { content: updated } ) }
+				);
+			}
 		}
 	}
 }
