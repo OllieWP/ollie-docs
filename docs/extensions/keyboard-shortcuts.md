@@ -1,7 +1,7 @@
 ---
 id: 67376
 title: "Keyboard Shortcuts"
-status: "draft"
+status: "publish"
 order: 9
 ---
 

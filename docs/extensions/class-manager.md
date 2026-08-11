@@ -1,7 +1,7 @@
 ---
 id: 67374
 title: "CSS Class Manager"
-status: "draft"
+status: "publish"
 order: 4
 ---
 

@@ -1,7 +1,7 @@
 ---
 id: 67380
 title: "Smart Sync"
-status: "draft"
+status: "publish"
 order: 1
 ---
 

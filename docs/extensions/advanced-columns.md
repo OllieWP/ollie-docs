@@ -1,7 +1,7 @@
 ---
 id: 67369
 title: "Advanced Column Controls"
-status: "draft"
+status: "publish"
 order: 11
 ---
 

@@ -1,7 +1,7 @@
 ---
 id: 67371
 title: "Advanced Group Controls"
-status: "draft"
+status: "publish"
 order: 10
 ---
 

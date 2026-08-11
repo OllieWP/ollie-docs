@@ -1,7 +1,7 @@
 ---
 id: 67382
 title: "Video Modal"
-status: "draft"
+status: "publish"
 order: 7
 ---
 

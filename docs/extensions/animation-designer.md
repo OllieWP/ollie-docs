@@ -1,7 +1,7 @@
 ---
 id: 67372
 title: "Animation Designer"
-status: "draft"
+status: "publish"
 order: 2
 ---
 

@@ -1,7 +1,7 @@
 ---
 id: 67383
 title: "Pattern Library Tips"
-status: "draft"
+status: "publish"
 order: 1
 ---
 

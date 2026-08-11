@@ -1,7 +1,7 @@
 ---
 id: 67384
 title: "Style Variations"
-status: "draft"
+status: "publish"
 order: 2
 ---
 

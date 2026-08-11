@@ -1,7 +1,7 @@
 ---
 id: 67373
 title: "Button Icons"
-status: "draft"
+status: "publish"
 order: 6
 ---
 

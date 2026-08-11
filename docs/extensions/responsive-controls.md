@@ -1,7 +1,7 @@
 ---
 id: 67379
 title: "Responsive Controls"
-status: "draft"
+status: "publish"
 order: 13
 ---
 

@@ -1,7 +1,7 @@
 ---
 id: 67359
 title: "Motion Gradient and Texture"
-status: "draft"
+status: "publish"
 order: 0
 ---
 

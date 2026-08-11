@@ -1,7 +1,7 @@
 ---
 id: 67381
 title: "Text Wrap"
-status: "draft"
+status: "publish"
 order: 8
 ---
 

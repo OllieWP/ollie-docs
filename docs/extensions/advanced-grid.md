@@ -1,7 +1,7 @@
 ---
 id: 67370
 title: "Advanced Grid Controls"
-status: "draft"
+status: "publish"
 order: 12
 ---
 
