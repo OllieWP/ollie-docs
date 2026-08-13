@@ -2,7 +2,7 @@
 id: 60234
 title: "Site-Wide Authentication"
 status: "publish"
-order: 1
+order: 0
 excerpt: "Activate Ollie Pro for every user on your site with site-wide authentication."
 ---
 

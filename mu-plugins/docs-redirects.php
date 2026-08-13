@@ -24,7 +24,7 @@ add_action( 'template_redirect', function () {
 		'/docs/build' => '/docs/build/pattern-library-intro/',
 		'/docs/ollie-ai' => '/docs/ollie-ai/ai-in-the-editor/',
 		'/docs/woocommerce' => '/docs/woocommerce/ollie-for-woocommerce/',
-		'/docs/support' => '/docs/support/account-support-intro/',
+		'/docs/support' => '/docs/support/site-wide-authentication/',
 	);
 	if ( isset( $always[ $path ] ) ) {
 		wp_safe_redirect( home_url( $always[ $path ] ), 301 );
@@ -52,7 +52,7 @@ add_action( 'template_redirect', function () {
 		'/docs/ollie-pro/upgrade-your-subscription' => '/docs/support/upgrade-your-subscription/',
 		'/docs/how-to-make-a-carousel-in-the-block-editor' => '/docs/build/carousel-designer/',
 		'/docs/how-to-make-a-horizontal-scroll-carousel-in-the-block-editor' => '/docs/build/carousel-designer/',
-		'/docs/general' => '/docs/support/account-support-intro/',
+		'/docs/general' => '/docs/support/site-wide-authentication/',
 		'/docs/general/ollie-support' => '/docs/support/ollie-support/',
 		'/docs/general/resources' => '/docs/support/resources/',
 		'/docs/block-based-resources' => '/docs/support/block-based-resources/',
@@ -100,6 +100,7 @@ add_action( 'template_redirect', function () {
 		'/docs/theme' => '/docs/learn-wordpress/wordpress-block-theme/',
 		'/docs/extensions' => '/docs/getting-started/extensions-intro/',
 		'/docs/patterns' => '/docs/build/pattern-library-intro/',
+		'/docs/support/account-support-intro' => '/docs/support/site-wide-authentication/',
 	);
 	if ( isset( $map[ $path ] ) ) {
 		wp_safe_redirect( home_url( $map[ $path ] ), 301 );

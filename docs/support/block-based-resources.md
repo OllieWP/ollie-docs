@@ -2,7 +2,7 @@
 id: 64507
 title: "Block Based Resources"
 status: "publish"
-order: 6
+order: 5
 excerpt: "A curated list of block-based WordPress resources, tools, and reading."
 ---
 

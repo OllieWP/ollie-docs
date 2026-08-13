@@ -2,7 +2,7 @@
 id: 60716
 title: "Upgrade Your Subscription"
 status: "publish"
-order: 3
+order: 2
 excerpt: "Upgrade your Ollie Pro plan or manage your subscription and billing."
 ---
 

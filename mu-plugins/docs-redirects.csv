@@ -12,15 +12,15 @@ source,target
 /docs/ollie-pro/ollie-pro-pattern-library/,/docs/build/pattern-library-intro/
 /docs/ollie-pro/ollie-pro-extensions/,/docs/getting-started/extensions-intro/
 /docs/ollie-pro/carousel-designer/,/docs/getting-started/extensions-intro/carousel-designer/
-/docs/ollie-pro/site-wide-authentication/,/docs/support/account-support-intro/site-wide-authentication/
-/docs/ollie-pro/using-ollie-pro-on-local-and-staging-sites/,/docs/support/account-support-intro/using-ollie-pro-on-local-and-staging-sites/
-/docs/ollie-pro/upgrade-your-subscription/,/docs/support/account-support-intro/upgrade-your-subscription/
+/docs/ollie-pro/site-wide-authentication/,/docs/support/site-wide-authentication/site-wide-authentication/
+/docs/ollie-pro/using-ollie-pro-on-local-and-staging-sites/,/docs/support/site-wide-authentication/using-ollie-pro-on-local-and-staging-sites/
+/docs/ollie-pro/upgrade-your-subscription/,/docs/support/site-wide-authentication/upgrade-your-subscription/
 /docs/how-to-make-a-carousel-in-the-block-editor/,/docs/getting-started/extensions-intro/carousel-designer/
 /docs/how-to-make-a-horizontal-scroll-carousel-in-the-block-editor/,/docs/getting-started/extensions-intro/carousel-designer/
-/docs/general/,/docs/support/account-support-intro/
-/docs/general/ollie-support/,/docs/support/account-support-intro/ollie-support/
-/docs/general/resources/,/docs/support/account-support-intro/resources/
-/docs/block-based-resources/,/docs/support/account-support-intro/block-based-resources/
+/docs/general/,/docs/support/site-wide-authentication/
+/docs/general/ollie-support/,/docs/support/site-wide-authentication/ollie-support/
+/docs/general/resources/,/docs/support/site-wide-authentication/resources/
+/docs/block-based-resources/,/docs/support/site-wide-authentication/block-based-resources/
 /docs/blocks/how-to-make-a-carousel-in-the-block-editor/,/docs/getting-started/extensions-intro/carousel-designer/
 /docs/blocks/how-to-make-a-horizontal-scroll-carousel-in-the-block-editor/,/docs/getting-started/extensions-intro/carousel-designer/
 /docs/blocks/carousel-designer/,/docs/getting-started/extensions-intro/carousel-designer/
@@ -29,7 +29,7 @@ source,target
 /docs/patterns/,/docs/build/pattern-library-intro/
 /docs/extensions/,/docs/getting-started/extensions-intro/
 /docs/theme/,/docs/learn-wordpress/wordpress-block-theme/
-/docs/support/,/docs/support/account-support-intro/
+/docs/support/,/docs/support/site-wide-authentication/
 /docs/theme/ollie-theme-intro/,/docs/learn-wordpress/wordpress-block-theme/
 /docs/extensions/advanced-columns/,/docs/build/advanced-columns/
 /docs/extensions/advanced-grid/,/docs/build/advanced-grid/
@@ -70,3 +70,4 @@ source,target
 /docs/theme/,/docs/learn-wordpress/wordpress-block-theme/
 /docs/extensions/,/docs/getting-started/extensions-intro/
 /docs/patterns/,/docs/build/pattern-library-intro/
+/docs/support/account-support-intro/,/docs/support/site-wide-authentication/
