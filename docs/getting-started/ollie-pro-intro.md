@@ -2,7 +2,7 @@
 id: 60239
 title: "Welcome to Ollie Pro"
 status: "publish"
-order: 0
+order: 1
 excerpt: "Learn everything you need to know about Ollie Pro and your Ollie Pro account."
 ---
 

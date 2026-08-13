@@ -2,7 +2,7 @@
 id: 67418
 title: "Understanding Patterns"
 status: "publish"
-order: 1
+order: 2
 excerpt: "What patterns are, how synced patterns differ, and when to reach for each."
 ---
 

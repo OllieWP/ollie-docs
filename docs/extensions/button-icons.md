@@ -2,7 +2,7 @@
 id: 67373
 title: "Button Icons"
 status: "publish"
-order: 7
+order: 8
 excerpt: "Add crisp icons to Button blocks from a built-in library or your own custom SVG."
 ---
 

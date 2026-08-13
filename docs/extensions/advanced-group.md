@@ -2,7 +2,7 @@
 id: 67371
 title: "Advanced Group Controls"
 status: "publish"
-order: 11
+order: 12
 excerpt: "Clickable group cards, mobile row stacking, and smarter sticky headers for Group blocks."
 ---
 

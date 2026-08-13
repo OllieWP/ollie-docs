@@ -2,7 +2,7 @@
 id: 64510
 title: "How to make a horizontal scroll carousel in the block editor"
 status: "draft"
-order: 91
+order: 92
 excerpt: "Step-by-step tutorial: build a horizontal scroll carousel with blocks."
 ---
 

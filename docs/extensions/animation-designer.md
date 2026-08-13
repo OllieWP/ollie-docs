@@ -2,7 +2,7 @@
 id: 67372
 title: "Animation Designer"
 status: "publish"
-order: 3
+order: 4
 excerpt: "Add entrance and hover animations that trigger on scroll, no code required."
 ---
 

@@ -2,7 +2,7 @@
 id: 67380
 title: "Smart Sync"
 status: "publish"
-order: 2
+order: 3
 excerpt: "Style one card, column, or slide — Smart Sync applies the change to all its siblings."
 ---
 

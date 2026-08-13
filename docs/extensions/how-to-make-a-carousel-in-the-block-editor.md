@@ -2,7 +2,7 @@
 id: 60102
 title: "How to make a carousel in the block editor"
 status: "draft"
-order: 90
+order: 91
 excerpt: "Step-by-step tutorial: build a carousel in the WordPress block editor."
 ---
 

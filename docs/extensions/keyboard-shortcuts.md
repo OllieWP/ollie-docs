@@ -2,7 +2,7 @@
 id: 67376
 title: "Keyboard Shortcuts"
 status: "publish"
-order: 10
+order: 11
 excerpt: "Navigate nested block layouts at speed with parent and tree-traversal shortcuts."
 ---
 

@@ -2,7 +2,7 @@
 id: 67359
 title: "Motion Gradient and Texture"
 status: "publish"
-order: 1
+order: 2
 excerpt: "Give Cover blocks animated gradient backgrounds and dots, grid, grain, or halftone textures."
 ---
 

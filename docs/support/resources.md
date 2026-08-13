@@ -2,7 +2,7 @@
 id: 60105
 title: "Resources"
 status: "publish"
-order: 4
+order: 5
 excerpt: "Child themes, courses, and community resources for going further with Ollie."
 ---
 

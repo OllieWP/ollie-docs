@@ -2,7 +2,7 @@
 id: 60106
 title: "WordPress Block Themes"
 status: "publish"
-order: 0
+order: 1
 excerpt: "Learn the basics of WordPress block themes and how to build with them."
 ---
 

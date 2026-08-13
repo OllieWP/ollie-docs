@@ -2,7 +2,7 @@
 id: 60232
 title: "Ollie Pro Dashboard"
 status: "publish"
-order: 1
+order: 2
 excerpt: "Tour the Ollie Pro dashboard — setup, patterns, extensions, and starter sites."
 ---
 

@@ -2,7 +2,7 @@
 id: 67382
 title: "Video Modal"
 status: "publish"
-order: 8
+order: 9
 excerpt: "Turn Cover and Button blocks into click-to-play video lightboxes."
 ---
 

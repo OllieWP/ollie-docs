@@ -2,7 +2,7 @@
 id: 67383
 title: "Pattern Library Tips"
 status: "publish"
-order: 3
+order: 4
 excerpt: "Live previews, favorites, and search — the pattern library's power features."
 ---
 

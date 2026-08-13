@@ -2,7 +2,7 @@
 id: 67379
 title: "Responsive Controls"
 status: "publish"
-order: 14
+order: 15
 excerpt: "Set per-device font sizes, spacing, and alignment right from the editor's device preview."
 ---
 

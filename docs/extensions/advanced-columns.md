@@ -2,7 +2,7 @@
 id: 67369
 title: "Advanced Column Controls"
 status: "publish"
-order: 12
+order: 13
 excerpt: "Control the exact order your columns stack in on mobile devices."
 ---
 

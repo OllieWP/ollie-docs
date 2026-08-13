@@ -2,7 +2,7 @@
 id: 67381
 title: "Text Wrap"
 status: "publish"
-order: 9
+order: 10
 excerpt: "Fix orphaned words and ragged headlines with one-click Pretty and Balance wrapping."
 ---
 

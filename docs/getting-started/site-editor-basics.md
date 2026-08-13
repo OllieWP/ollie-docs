@@ -2,7 +2,7 @@
 id: 67416
 title: "Site Editor Basics"
 status: "publish"
-order: 2
+order: 3
 excerpt: "Learn your way around the editor that powers every part of your Ollie site."
 ---
 

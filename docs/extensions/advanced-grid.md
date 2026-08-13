@@ -2,7 +2,7 @@
 id: 67370
 title: "Advanced Grid Controls"
 status: "publish"
-order: 13
+order: 14
 excerpt: "Add custom responsive breakpoints to WordPress Grid layouts — no CSS required."
 ---
 

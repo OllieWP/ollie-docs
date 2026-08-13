@@ -2,7 +2,7 @@
 id: 67415
 title: "Customizing Your Header and Footer"
 status: "publish"
-order: 3
+order: 4
 excerpt: "Edit, restyle, or completely swap your site's header and footer designs."
 ---
 

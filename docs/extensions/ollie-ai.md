@@ -2,7 +2,7 @@
 id: 67378
 title: "Ollie AI"
 status: "publish"
-order: 15
+order: 16
 excerpt: "AI writing and design tools built right into the editor — rewrite, generate, and design with prompts."
 ---
 

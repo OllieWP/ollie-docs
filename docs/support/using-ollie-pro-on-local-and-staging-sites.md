@@ -2,7 +2,7 @@
 id: 64515
 title: "Ollie Pro for Local and Staging"
 status: "publish"
-order: 1
+order: 2
 excerpt: "Use your Ollie Pro license on local and staging environments for free."
 ---
 

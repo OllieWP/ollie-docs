@@ -2,7 +2,7 @@
 id: 67375
 title: "Hover Colors"
 status: "publish"
-order: 6
+order: 7
 excerpt: "Add hover text, background, and border colors to any block, with full transition control."
 ---
 

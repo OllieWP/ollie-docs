@@ -2,7 +2,7 @@
 id: 66891
 title: "Carousel Designer"
 status: "publish"
-order: 0
+order: 1
 excerpt: "Build hero sliders, testimonials, logo marquees, and dynamic post carousels with blocks."
 ---
 

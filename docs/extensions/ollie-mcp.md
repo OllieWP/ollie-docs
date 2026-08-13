@@ -2,7 +2,7 @@
 id: 67464
 title: "Ollie MCP"
 status: "publish"
-order: 16
+order: 17
 excerpt: "Connect Claude or your favorite AI agent to your site and build pages with natural language."
 ---
 

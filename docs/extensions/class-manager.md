@@ -2,7 +2,7 @@
 id: 67374
 title: "CSS Class Manager"
 status: "publish"
-order: 5
+order: 6
 excerpt: "Manage reusable CSS classes with a real editor for base, hover, and responsive styles."
 ---
 
