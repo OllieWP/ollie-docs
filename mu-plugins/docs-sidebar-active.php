@@ -87,11 +87,26 @@ add_action( 'template_redirect', function () {
 	if ( ! isset( $canonical_map[ $doc_id ] ) ) {
 		return;
 	}
+	// Multiple layers print canonicals (core, SEO output on the live
+	// site), so rather than competing with them, rewrite every canonical
+	// in the final page to the override — and add one only if none exist.
+	$target = esc_url( $canonical_map[ $doc_id ] );
 	remove_action( 'wp_head', 'rel_canonical' );
-	add_action( 'wp_head', function () use ( $canonical_map, $doc_id ) {
-		echo '<link rel="canonical" href="' . esc_url( $canonical_map[ $doc_id ] ) . '" />' . "\n";
+	ob_start( function ( $html ) use ( $target ) {
+		$tag  = '<link rel="canonical" href="' . $target . '">';
+		$html = preg_replace(
+			'#<link\s+rel="canonical"\s+href="[^"]*"\s*/?>#',
+			$tag,
+			$html,
+			-1,
+			$count
+		);
+		if ( ! $count ) {
+			$html = str_replace( '</head>', $tag . "\n</head>", $html );
+		}
+		return $html;
 	} );
-} );
+}, 1 );
 
 /** Active-link styling, printed only on doc pages. */
 add_action( 'wp_head', function () {
