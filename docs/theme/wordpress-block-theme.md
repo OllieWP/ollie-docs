@@ -2,7 +2,7 @@
 id: 60106
 title: "WordPress Block Themes"
 status: "publish"
-order: 1
+order: 0
 excerpt: "Learn the basics of WordPress block themes and how to build with them."
 ---
 
@@ -12,9 +12,11 @@ https://www.youtube.com/watch?v=D7GUoX2XU1k
 </div></figure>
 <!-- /wp:embed -->
 
-Once you activate Ollie, it will largely behave like any other traditional WordPress theme. You can create posts and pages just like you always have. However, as a block theme, Ollie also supports powerful new features like the site editor, patterns, global styles, and more. 
+The free Ollie block theme is the foundation everything else builds on: a beautifully designed, blazing-fast WordPress theme made for the site editor. This doc covers the modern WordPress features Ollie is built on — the site editor, patterns, style variations, and global styles.
 
-This means you get the familiarity of traditional WordPress themes combined with the enhanced flexibility and customization options that come with modern block-based design.
+**Installing Ollie:** in your WordPress admin, go to **Appearance → Themes → Add New**, search for "Ollie," then install and activate it. You can also [download the theme](https://olliewp.com/download/) and upload it manually.
+
+Once you activate Ollie, it will largely behave like any other traditional WordPress theme. You can create posts and pages just like you always have. However, as a block theme, Ollie also supports powerful new features like the site editor, patterns, global styles, and more. This means you get the familiarity of traditional WordPress themes combined with the enhanced flexibility and customization options that come with modern block-based design.
 
 <!-- wp:separator {"className":"is-style-separator-thin","style":{"spacing":{"margin":{"top":"var:preset|spacing|large","bottom":"var:preset|spacing|large"}}},"backgroundColor":"main-accent"} -->
 <hr class="wp-block-separator has-text-color has-main-accent-color has-alpha-channel-opacity has-main-accent-background-color has-background is-style-separator-thin" style="margin-top:var(--wp--preset--spacing--large);margin-bottom:var(--wp--preset--spacing--large)"/>
@@ -215,3 +217,5 @@ With Global Styles, you can create a cohesive and consistent look across your en
 Whether you want to change the overall color scheme, update font choices, or adjust the spacing between elements, Global Styles makes it easy to implement these changes universally. 
 
 Additionally, you can preview these adjustments in real-time, giving you immediate feedback on how your design decisions affect the overall appearance of your site.
+
+Want to go deeper? See [how the Ollie theme is structured](/docs/theme/block-theme-structure/), explore the [color palette](/docs/theme/ollie-color-palette/) behind the design system — or, if you're building on your own foundation, learn about [using Ollie Pro with a custom theme](/docs/theme/using-ollie-pro-with-a-custom-theme/).

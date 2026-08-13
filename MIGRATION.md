@@ -21,7 +21,7 @@ Enhancer):
 
 | Old URL | New URL |
 | --- | --- |
-| /docs/ollie-block-theme/ | /docs/theme/ollie-theme-intro/ |
+| /docs/ollie-block-theme/ | /docs/theme/wordpress-block-theme/ |
 | /docs/ollie-block-theme/getting-started/ | /docs/getting-started/getting-started-intro/ |
 | /docs/ollie-block-theme/wordpress-block-theme/ | /docs/theme/wordpress-block-theme/ |
 | /docs/ollie-block-theme/block-theme-structure/ | /docs/theme/block-theme-structure/ |

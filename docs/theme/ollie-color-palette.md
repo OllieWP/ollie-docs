@@ -2,7 +2,7 @@
 id: 60101
 title: "Ollie Color Palette"
 status: "publish"
-order: 5
+order: 4
 excerpt: "How Ollie's smart color palette keeps every pattern and page in perfect sync."
 ---
 

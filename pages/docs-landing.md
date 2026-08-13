@@ -33,7 +33,7 @@ status: "publish"
 
 <!-- wp:query {"queryId":0,"query":{"perPage":10,"pages":0,"offset":0,"postType":"docs","order":"desc","orderBy":"post__in","author":"","search":"","exclude":[],"sticky":"","inherit":false,"parents":[],"format":[],"include_posts":[{"id":67416,"title":"Site Editor Basics"},{"id":67415,"title":"Customizing Your Header and Footer"},{"id":67420,"title":"Global Styles"},{"id":67418,"title":"Understanding Patterns"}],"meta_query":[],"taxQuery":{"include":{"category":[]}}},"namespace":"advanced-query-loop","align":"wide"} -->
 <div class="wp-block-query alignwide"><!-- wp:group {"layout":{"type":"constrained","justifyContent":"left"}} -->
-<div class="wp-block-group"><!-- wp:post-template {"gridBreakpoints":[{"value":600,"label":"600px"}],"gridBreakpointSettings":{"600":{"columnCount":1}},"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|small"}},"layout":{"type":"grid","columnCount":2,"minimumColumnWidth":null}} -->
+<div class="wp-block-group"><!-- wp:post-template {"gridBreakpoints":[{"value":768,"label":"768px"},{"value":600,"label":"600px"}],"gridBreakpointSettings":{"600":{"columnCount":1},"768":{"columnCount":2}},"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|small"}},"layout":{"type":"grid","columnCount":3,"minimumColumnWidth":null}} -->
 <!-- wp:block {"ref":60432} /-->
 <!-- /wp:post-template --></div>
 <!-- /wp:group --></div>

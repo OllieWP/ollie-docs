@@ -2,7 +2,7 @@
 id: 60100
 title: "Block Theme Structure"
 status: "publish"
-order: 2
+order: 1
 excerpt: "How the Ollie theme is organized — templates, template parts, and patterns."
 ---
 

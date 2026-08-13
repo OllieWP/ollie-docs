@@ -2,7 +2,7 @@
 id: 67420
 title: "Global Styles"
 status: "publish"
-order: 4
+order: 3
 excerpt: "Set typography, colors, and spacing once and cascade them across your whole site."
 ---
 

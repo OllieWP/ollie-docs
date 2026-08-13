@@ -21,7 +21,7 @@ add_action( 'template_redirect', function () {
 		'/docs/getting-started' => '/docs/getting-started/getting-started-intro/',
 		'/docs/patterns' => '/docs/patterns/pattern-library-intro/',
 		'/docs/extensions' => '/docs/extensions/extensions-intro/',
-		'/docs/theme' => '/docs/theme/ollie-theme-intro/',
+		'/docs/theme' => '/docs/theme/wordpress-block-theme/',
 		'/docs/support' => '/docs/support/account-support-intro/',
 	);
 	if ( isset( $always[ $path ] ) ) {
@@ -32,7 +32,7 @@ add_action( 'template_redirect', function () {
 		return;
 	}
 	$map = array(
-		'/docs/ollie-block-theme' => '/docs/theme/ollie-theme-intro/',
+		'/docs/ollie-block-theme' => '/docs/theme/wordpress-block-theme/',
 		'/docs/ollie-block-theme/getting-started' => '/docs/getting-started/getting-started-intro/',
 		'/docs/ollie-block-theme/wordpress-block-theme' => '/docs/theme/wordpress-block-theme/',
 		'/docs/ollie-block-theme/block-theme-structure' => '/docs/theme/block-theme-structure/',
@@ -57,6 +57,7 @@ add_action( 'template_redirect', function () {
 		'/docs/blocks/how-to-make-a-carousel-in-the-block-editor' => '/docs/extensions/carousel-designer/',
 		'/docs/blocks/how-to-make-a-horizontal-scroll-carousel-in-the-block-editor' => '/docs/extensions/carousel-designer/',
 		'/docs/blocks/carousel-designer' => '/docs/extensions/carousel-designer/',
+		'/docs/theme/ollie-theme-intro' => '/docs/theme/wordpress-block-theme/',
 		'/docs/blocks' => '/docs/extensions/extensions-intro/',
 	);
 	if ( isset( $map[ $path ] ) ) {

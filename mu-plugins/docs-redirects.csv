@@ -1,11 +1,11 @@
 source,target
-/docs/ollie-block-theme/,/docs/theme/ollie-theme-intro/
+/docs/ollie-block-theme/,/docs/theme/wordpress-block-theme/
 /docs/ollie-block-theme/getting-started/,/docs/getting-started/getting-started-intro/
-/docs/ollie-block-theme/wordpress-block-theme/,/docs/theme/ollie-theme-intro/wordpress-block-theme/
-/docs/ollie-block-theme/block-theme-structure/,/docs/theme/ollie-theme-intro/block-theme-structure/
-/docs/ollie-block-theme/ollie-color-palette/,/docs/theme/ollie-theme-intro/ollie-color-palette/
-/docs/ollie-block-theme/disable-ollie-styles/,/docs/theme/ollie-theme-intro/disable-ollie-styles/
-/docs/ollie-block-theme/ollie-changelog/,/docs/theme/ollie-theme-intro/ollie-changelog/
+/docs/ollie-block-theme/wordpress-block-theme/,/docs/theme/wordpress-block-theme/wordpress-block-theme/
+/docs/ollie-block-theme/block-theme-structure/,/docs/theme/wordpress-block-theme/block-theme-structure/
+/docs/ollie-block-theme/ollie-color-palette/,/docs/theme/wordpress-block-theme/ollie-color-palette/
+/docs/ollie-block-theme/disable-ollie-styles/,/docs/theme/wordpress-block-theme/disable-ollie-styles/
+/docs/ollie-block-theme/ollie-changelog/,/docs/theme/wordpress-block-theme/ollie-changelog/
 /docs/ollie-pro/,/docs/getting-started/getting-started-intro/
 /docs/ollie-pro/ollie-pro-intro/,/docs/getting-started/getting-started-intro/ollie-pro-intro/
 /docs/ollie-pro/ollie-pro-dashboard/,/docs/getting-started/getting-started-intro/ollie-pro-dashboard/
@@ -28,5 +28,6 @@ source,target
 /docs/getting-started/,/docs/getting-started/getting-started-intro/
 /docs/patterns/,/docs/patterns/pattern-library-intro/
 /docs/extensions/,/docs/extensions/extensions-intro/
-/docs/theme/,/docs/theme/ollie-theme-intro/
+/docs/theme/,/docs/theme/wordpress-block-theme/
 /docs/support/,/docs/support/account-support-intro/
+/docs/theme/ollie-theme-intro/,/docs/theme/wordpress-block-theme/

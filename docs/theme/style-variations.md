@@ -2,7 +2,7 @@
 id: 67384
 title: "Style Variations"
 status: "publish"
-order: 3
+order: 2
 excerpt: "Change your site's entire look in one click with Ollie's style variations."
 ---
 
