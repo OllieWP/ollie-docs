@@ -34,6 +34,29 @@ function findBlockSpan( html, name, from = 0 ) {
 }
 
 /**
+ * Read the section list (title + parent id) out of existing sidebar markup,
+ * for change detection: sync leaves a hand-styled sidebar alone unless the
+ * sections themselves differ.
+ */
+export function readSidebarSections( sidebarRaw ) {
+	const titles = [
+		...sidebarRaw.matchAll(
+			/toggle-title">(?:<strong>)?([^<]*)(?:<\/strong>)?<\/span>/g
+		),
+	].map( ( m ) =>
+		m[ 1 ]
+			.replace( /&amp;/g, '&' )
+			.replace( /&lt;/g, '<' )
+			.replace( /&gt;/g, '>' )
+	);
+	const ids = [ ...sidebarRaw.matchAll( /"parents":\[(\d+)\]/g ) ].map(
+		( m ) => Number( m[ 1 ] )
+	);
+	if ( titles.length !== ids.length ) return null;
+	return titles.map( ( title, i ) => ( { title, id: ids[ i ] } ) );
+}
+
+/**
  * Rebuild the sidebar's accordion from the section list.
  *
  * @param {string} sidebarRaw Current template part markup.

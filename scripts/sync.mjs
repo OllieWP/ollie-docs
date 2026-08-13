@@ -19,7 +19,7 @@ import {
 	serializeFrontMatter,
 } from './lib/convert.mjs';
 import { fetchAllDocs, wpFetch, ROOT } from './lib/wp.mjs';
-import { buildSidebar } from './lib/sidebar.mjs';
+import { buildSidebar, readSidebarSections } from './lib/sidebar.mjs';
 
 const SIDEBAR_SLUG = 'docs-sidebar';
 
@@ -190,12 +190,24 @@ if ( pendingSections.length && dryRun ) {
 	if ( ! part ) {
 		console.error( `! Template part "${ SIDEBAR_SLUG }" not found — sidebar skipped.` );
 	} else {
-		let updated;
-		try {
-			updated = buildSidebar( part.content.raw, sections );
-		} catch ( err ) {
-			console.error( `! Sidebar not updated: ${ err.message }` );
-			updated = part.content.raw;
+		// The sidebar is hand-styled in the Site Editor, so regeneration
+		// only happens when the section list itself changed (or with
+		// --sidebar to force it). Cosmetic drift is left alone.
+		const live = readSidebarSections( part.content.raw );
+		const sameSections =
+			live !== null &&
+			live.length === sections.length &&
+			live.every(
+				( s, i ) =>
+					s.id === sections[ i ].id && s.title === sections[ i ].title
+			);
+		let updated = part.content.raw;
+		if ( ! sameSections || process.argv.includes( '--sidebar' ) ) {
+			try {
+				updated = buildSidebar( part.content.raw, sections );
+			} catch ( err ) {
+				console.error( `! Sidebar not updated: ${ err.message }` );
+			}
 		}
 		if ( updated !== part.content.raw ) {
 			changed++;
