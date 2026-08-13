@@ -1,7 +1,7 @@
 ---
 id: 67640
 title: "Using Ollie Pro with a Custom Theme"
-status: "draft"
+status: "publish"
 order: 5
 excerpt: "Run Ollie Pro on your own Ollie-based theme — the freedom, the requirements, and the trade-offs."
 ---
