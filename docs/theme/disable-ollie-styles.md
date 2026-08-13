@@ -2,7 +2,7 @@
 id: 64185
 title: "Disable Ollie Styles"
 status: "publish"
-order: 5
+order: 6
 excerpt: "Turn off Ollie's opinionated block styles when you want full manual control."
 ---
 

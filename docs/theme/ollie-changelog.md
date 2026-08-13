@@ -2,7 +2,7 @@
 id: 60128
 title: "Ollie Updates"
 status: "publish"
-order: 6
+order: 7
 excerpt: "What's new in each release of the Ollie theme."
 ---
 
