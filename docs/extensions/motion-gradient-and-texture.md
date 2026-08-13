@@ -18,9 +18,9 @@ Select a Cover block and open the **Motion Gradient** panel, then flip on **Enab
 
 - **Mode** — choose **Dark** or **Light**. Dark mode paints luminous color over a deep base, perfect for hero sections; Light mode blends deeper tones over a bright background for airy, pastel designs. Each mode has its own set of color pairings.
 - **Style** — pick the gradient's personality:
-	- **Glow** — soft, blurred orbs of color drifting across the canvas, like light through frosted glass.
-	- **Waves** — layered, flowing bands of color sweeping across the cover.
-	- **Mesh** — a modern mesh-gradient look with colors blooming from multiple points.
+    - **Glow** — soft, blurred orbs of color drifting across the canvas, like light through frosted glass.
+    - **Waves** — layered, flowing bands of color sweeping across the cover.
+    - **Mesh** — a modern mesh-gradient look with colors blooming from multiple points.
 
 ### Shuffle Your Way to a Design
 

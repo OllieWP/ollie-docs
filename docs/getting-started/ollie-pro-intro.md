@@ -20,8 +20,8 @@ This doc will teach you everything you need to know about Ollie Pro and your Oll
 <hr class="wp-block-separator has-text-color has-main-accent-color has-alpha-channel-opacity has-main-accent-background-color has-background is-style-separator-thin" style="margin-top:var(--wp--preset--spacing--large);margin-bottom:var(--wp--preset--spacing--large)"/>
 <!-- /wp:separator -->
 
-<!-- wp:heading -->
-<h2 class="wp-block-heading" id="getting-started">Getting Started</h2>
+<!-- wp:heading {"anchor":"getting-started"} -->
+<h2 id="getting-started" class="wp-block-heading">Getting Started</h2>
 <!-- /wp:heading -->
 
 To purchase Ollie Pro, visit the <a href="https://olliewp.com/pro/" data-type="page" data-id="57033">Ollie Pro landing page</a> and choose which <a href="https://olliewp.com/pro#purchase" data-type="page" data-id="57033">pricing option</a> works best for you. After your purchase, an account will be created for you and your login details will be emailed to you.
@@ -60,4 +60,4 @@ To get started with Ollie Pro, download the latest Ollie Pro zip from the My Dow
 
 Next, log in to your WordPress admin dashboard and upload and activate the plugin. **Go to Plugins → Add New → Upload Plugin** to upload the Ollie Pro plugin and activate it. 
 
-Upon activation, you'll be shown a pop-up to lead you to the Ollie Pro Dashboard.
+Upon activation, you'll be shown a pop-up to lead you to the <a href="https://olliewp.com/docs/getting-started/ollie-pro-dashboard/" title="Ollie Pro Dashboard">Ollie Pro Dashboard</a>. 

@@ -3,7 +3,7 @@ id: 60232
 title: "Ollie Pro Dashboard"
 status: "publish"
 order: 1
-excerpt: "Tour the Ollie Pro dashboard \u2014 setup, patterns, extensions, and starter sites."
+excerpt: "Tour the Ollie Pro dashboard — setup, patterns, extensions, and starter sites."
 ---
 
 <!-- wp:group {"metadata":{"name":"Video Box"},"className":"is-style-column-box-shadow ollie-row-reverse video-grid","style":{"spacing":{"padding":{"top":"var:preset|spacing|medium","bottom":"var:preset|spacing|medium","left":"var:preset|spacing|medium","right":"var:preset|spacing|medium"}},"border":{"radius":"5px","width":"1px"}},"backgroundColor":"base","borderColor":"primary-accent","layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"top","justifyContent":"left"}} -->
