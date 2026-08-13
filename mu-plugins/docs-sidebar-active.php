@@ -77,6 +77,6 @@ add_action( 'wp_head', function () {
 		return;
 	}
 	echo '<style id="ollie-docs-sidebar-active">'
-		. '.ollie-doc-current a{color:var(--wp--preset--color--primary);font-weight:600;}'
+		. '.ollie-doc-current a{color:var(--wp--preset--color--primary);font-weight:500;}'
 		. '</style>';
 } );
