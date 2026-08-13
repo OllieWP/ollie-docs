@@ -2,7 +2,7 @@
 id: 67417
 title: "Creating Your Own Patterns"
 status: "publish"
-order: 3
+order: 4
 excerpt: "Turn any design into a reusable pattern — or a time-saving text snippet."
 ---
 
