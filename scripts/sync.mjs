@@ -234,6 +234,37 @@ for ( const doc of remote ) {
 	}
 }
 
+// Tracked pages (pages/*.md with an id) sync content and title only.
+const pagesDir = join( ROOT, 'pages' );
+try {
+	for ( const file of readdirSync( pagesDir ) ) {
+		if ( ! file.endsWith( '.md' ) ) continue;
+		const { meta, body } = parseFrontMatter(
+			readFileSync( join( pagesDir, file ), 'utf8' )
+		);
+		if ( ! meta.id ) {
+			console.error( `! pages/${ file }: missing id — tracked pages are never created, only updated` );
+			continue;
+		}
+		const res = await wpFetch( `/pages/${ meta.id }?context=edit` );
+		const page = await res.json();
+		const content = markdownToBlocks( body );
+		if ( page.content.raw === content && page.title.raw === meta.title ) {
+			continue;
+		}
+		changed++;
+		console.log( `${ dryRun ? 'would update' : 'updating' }  pages/${ file }` );
+		if ( ! dryRun ) {
+			await wpFetch( `/pages/${ meta.id }`, {
+				method: 'POST',
+				body: JSON.stringify( { title: meta.title, content } ),
+			} );
+		}
+	}
+} catch ( err ) {
+	if ( err.code !== 'ENOENT' ) throw err;
+}
+
 console.log(
 	changed
 		? `\n${ dryRun ? 'Would change' : 'Changed' } ${ changed } doc(s).`

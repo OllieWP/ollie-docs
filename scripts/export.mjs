@@ -9,14 +9,15 @@
  * for this command.
  */
 
-import { mkdirSync, writeFileSync } from 'node:fs';
+import { mkdirSync, readdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 import {
 	blocksToMarkdown,
 	markdownToBlocks,
+	parseFrontMatter,
 	serializeFrontMatter,
 } from './lib/convert.mjs';
-import { fetchAllDocs, ROOT } from './lib/wp.mjs';
+import { fetchAllDocs, wpFetch, ROOT } from './lib/wp.mjs';
 
 const docs = await fetchAllDocs();
 const byId = new Map( docs.map( ( d ) => [ d.id, d ] ) );
@@ -74,6 +75,33 @@ for ( const doc of docs ) {
 	mkdirSync( dir, { recursive: true } );
 	writeFileSync( join( dir, filename ), file );
 	console.log( `  ${ join( dir, filename ).replace( ROOT + '/', '' ) }` );
+}
+
+// Tracked pages: any file already in pages/ is refreshed from the site.
+const pagesDir = join( ROOT, 'pages' );
+try {
+	for ( const file of readdirSync( pagesDir ) ) {
+		if ( ! file.endsWith( '.md' ) ) continue;
+		const path = join( pagesDir, file );
+		const { meta } = parseFrontMatter( readFileSync( path, 'utf8' ) );
+		if ( ! meta.id ) continue;
+		const res = await wpFetch( `/pages/${ meta.id }?context=edit` );
+		const page = await res.json();
+		let body = blocksToMarkdown( page.content.raw );
+		if ( markdownToBlocks( body ) !== page.content.raw ) {
+			body = page.content.raw + '\n';
+		}
+		writeFileSync(
+			path,
+			serializeFrontMatter(
+				{ id: page.id, type: 'page', title: page.title.raw, status: page.status },
+				body
+			)
+		);
+		console.log( `  pages/${ file }` );
+	}
+} catch ( err ) {
+	if ( err.code !== 'ENOENT' ) throw err;
 }
 
 console.log( `\nExported ${ converted + rawFallback } docs (${ rawFallback } kept as raw markup).` );
