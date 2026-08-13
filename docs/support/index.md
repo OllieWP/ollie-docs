@@ -1,9 +1,9 @@
 ---
 id: 60242
-title: "Account & Support"
+title: "Account & Advanced"
 status: "publish"
-order: 4
-excerpt: "Manage your Ollie Pro account, licensing, and environments — and get help fast."
+order: 6
+excerpt: "Manage your account and license — plus advanced customization and support."
 ---
 
 

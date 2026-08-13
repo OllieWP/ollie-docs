@@ -13,7 +13,7 @@ status: "publish"
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
-<!-- wp:query {"queryId":0,"query":{"perPage":10,"pages":0,"offset":0,"postType":"docs","order":"desc","orderBy":"post__in","author":"","search":"","exclude":[],"sticky":"","inherit":false,"parents":[],"format":[],"include_posts":[{"id":60099,"title":"Getting Started"},{"id":60233,"title":"Pattern Library"},{"id":64859,"title":"Extensions"},{"id":60241,"title":"Ollie Theme"},{"id":60242,"title":"Account \u0026 Support"}],"meta_query":[],"taxQuery":{"include":{"category":[]}}},"namespace":"advanced-query-loop","align":"wide"} -->
+<!-- wp:query {"queryId":0,"query":{"perPage":10,"pages":0,"offset":0,"postType":"docs","order":"desc","orderBy":"post__in","author":"","search":"","exclude":[],"sticky":"","inherit":false,"parents":[],"format":[],"include_posts":[{"id":60099,"title":"Getting Started"},{"id":60241,"title":"Learn WordPress"},{"id":64859,"title":"Design Your Site"},{"id":60233,"title":"Build Pages"},{"id":67752,"title":"Ollie AI"},{"id":67753,"title":"Sell with WooCommerce"},{"id":60242,"title":"Account \u0026 Advanced"}],"meta_query":[],"taxQuery":{"include":{"category":[]}}},"namespace":"advanced-query-loop","align":"wide"} -->
 <div class="wp-block-query alignwide"><!-- wp:group {"layout":{"type":"constrained","justifyContent":"left"}} -->
 <div class="wp-block-group"><!-- wp:post-template {"gridBreakpoints":[{"value":768,"label":"768px"},{"value":600,"label":"600px"}],"gridBreakpointSettings":{"600":{"columnCount":1},"768":{"columnCount":2}},"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|small"}},"layout":{"type":"grid","columnCount":3,"minimumColumnWidth":null}} -->
 <!-- wp:block {"ref":60432} /-->
