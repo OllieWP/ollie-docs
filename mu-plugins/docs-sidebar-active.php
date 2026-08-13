@@ -71,6 +71,28 @@ add_filter( 'render_block_core/post-title', function ( $content, $block, $instan
 	return str_replace( 'class="', 'class="ollie-doc-current ', $content );
 }, 10, 3 );
 
+/**
+ * Canonical overrides for docs that mirror blog content: search engines
+ * consolidate ranking signals on the blog post while the doc stays
+ * available in the docs sidebar. Keyed by doc post id.
+ */
+add_action( 'template_redirect', function () {
+	if ( ! is_singular( 'docs' ) ) {
+		return;
+	}
+	$canonical_map = array(
+		67750 => 'https://olliewp.com/wordpress-patterns-vs-reusable-blocks/', // Patterns vs Reusable Blocks
+	);
+	$doc_id = get_queried_object_id();
+	if ( ! isset( $canonical_map[ $doc_id ] ) ) {
+		return;
+	}
+	remove_action( 'wp_head', 'rel_canonical' );
+	add_action( 'wp_head', function () use ( $canonical_map, $doc_id ) {
+		echo '<link rel="canonical" href="' . esc_url( $canonical_map[ $doc_id ] ) . '" />' . "\n";
+	} );
+} );
+
 /** Active-link styling, printed only on doc pages. */
 add_action( 'wp_head', function () {
 	if ( ! is_singular( 'docs' ) ) {

@@ -1,7 +1,7 @@
 ---
 id: 67750
 title: "Patterns vs Reusable Blocks"
-status: "draft"
+status: "publish"
 order: 3
 excerpt: "Patterns, synced patterns, and the old reusable blocks — what changed and when to use each."
 ---
