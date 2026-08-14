@@ -15,47 +15,40 @@ const TOKEN_RE =
 	/<!--\s+(\/)?wp:([a-z][a-z0-9_/-]*)(\s+\{[\s\S]*?\})?\s+(\/)?-->/g;
 
 /*
- * Video cards: docs write `{{video id="..." title="..." desc="..."}}` and
- * the converter expands it from a single markup template — one place to
- * restyle every card (a repo-side synced pattern; real synced patterns
- * can't vary anchors per instance). The card opens the site's video modal
- * on click anywhere in the card: the `ollie-video` class and the YouTube
- * id anchor live on the outer group.
+ * Video cards: docs write `{{video id="..." [start="54"] title="..."
+ * desc="..."}}` and the converter expands it to the site's synced Video
+ * Modal Card pattern with per-instance overrides — video URL (with
+ * optional timestamp), title, and description. The card's design lives in
+ * ONE place: the synced pattern, editable in the Site Editor.
  */
-import { readFileSync as _readFileSync } from 'node:fs';
-const VIDEO_CARD_TEMPLATE = _readFileSync(
-	new URL( './video-card-template.html', import.meta.url ),
-	'utf8'
-);
+const VIDEO_CARD_PATTERN_REF = 67760;
 const VIDEO_DIRECTIVE_RE =
-	/^\{\{video id="([^"\s]+)" title="([^"]+)" desc="([^"]+)"\}\}\s*$/;
+	/^\{\{video id="([^"\s]+)"(?: start="(\d+)")? title="([^"]+)" desc="([^"]+)"\}\}\s*$/;
 
-function expandVideoCard( id, title, desc ) {
-	return VIDEO_CARD_TEMPLATE.replaceAll( '%%ID%%', id )
-		.replaceAll( '%%TITLE%%', title )
-		.replaceAll( '%%DESC%%', desc );
+function expandVideoCard( id, start, title, desc ) {
+	const details = start
+		? `{"ollieVideoUrl":"https://youtu.be/${ id }?t=${ start }","ollieVideoStartTime":${ start }}`
+		: `{"ollieVideoUrl":"https://youtu.be/${ id }"}`;
+	return (
+		`<!-- wp:block {"ref":${ VIDEO_CARD_PATTERN_REF },"content":{` +
+		`"Video Modal Card Details":${ details },` +
+		`"Video Modal Card Title":{"content":"${ title }"},` +
+		`"Video Modal Card Description":{"content":"${ desc }"}}} /-->`
+	);
 }
 
 function videoCardToMd( block ) {
-	if (
-		! block.attrs ||
-		! block.attrs.includes( '"ollieVideoModal":true' ) ||
-		! block.fullRaw.includes( '"name":"Video Box"' )
-	) {
+	if ( ! block.attrs || ! block.attrs.includes( `"ref":${ VIDEO_CARD_PATTERN_REF }` ) ) {
 		return null;
 	}
-	const id = block.attrs.match(
-		/"ollieVideoUrl":"https:\/\/www\.youtube\.com\/watch\?v=([A-Za-z0-9_-]+)"/
-	)?.[ 1 ];
-	const title = block.fullRaw.match(
-		/<h4 class="wp-block-heading has-primary-font-family has-small-font-size">([^<]+)<\/h4>/
-	)?.[ 1 ];
-	const desc = block.fullRaw.match(
-		/<p class="has-main-color has-text-color has-link-color has-x-small-font-size">([^<]+)<\/p>/
-	)?.[ 1 ];
-	if ( ! id || ! title || ! desc ) return null;
-	if ( [ id, title, desc ].some( ( s ) => s.includes( '"' ) ) ) return null;
-	return `{{video id="${ id }" title="${ title }" desc="${ desc }"}}`;
+	const url = block.attrs.match(
+		/"ollieVideoUrl":"https:\/\/youtu\.be\/([A-Za-z0-9_-]+)(?:\?t=(\d+))?"/
+	);
+	const title = block.attrs.match( /"Video Modal Card Title":\{"content":"([^"]+)"\}/ )?.[ 1 ];
+	const desc = block.attrs.match( /"Video Modal Card Description":\{"content":"([^"]+)"\}/ )?.[ 1 ];
+	if ( ! url || ! title || ! desc ) return null;
+	const start = url[ 2 ] ? ` start="${ url[ 2 ] }"` : '';
+	return `{{video id="${ url[ 1 ] }"${ start } title="${ title }" desc="${ desc }"}}`;
 }
 
 /** Split serialized block content into top-level blocks. */
@@ -327,7 +320,7 @@ const CONVERTERS = {
 	code: codeToMd,
 	separator: separatorToMd,
 	table: tableToMd,
-	cover: videoCardToMd,
+	block: videoCardToMd,
 };
 
 /**
@@ -420,7 +413,9 @@ export function markdownToBlocks( md ) {
 		// Video card directive expands from the shared template.
 		const video = line.match( VIDEO_DIRECTIVE_RE );
 		if ( video ) {
-			out.push( expandVideoCard( video[ 1 ], video[ 2 ], video[ 3 ] ) );
+			out.push(
+				expandVideoCard( video[ 1 ], video[ 2 ], video[ 3 ], video[ 4 ] )
+			);
 			i++;
 			continue;
 		}

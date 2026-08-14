@@ -44,7 +44,7 @@ By the time you complete the wizard, you'll have a professional, responsive webs
 
 ## Starter Sites
 
-{{video id="-QEqJlNtX3c" title="Ollie Pro Starter Site" desc="Save hours of time by starting your site with an Ollie Pro starter site to get up and running quickly."}}
+{{video id="-QEqJlNtX3c" start="54" title="Ollie Pro Starter Site" desc="Save hours of time by starting your site with an Ollie Pro starter site to get up and running quickly."}}
 
 While the setup wizard is already a huge time-saver, starter sites take convenience to the next level by doing virtually everything automatically. With just a couple of clicks, starter sites will install essential plugins, import beautifully designed pages, set up templates, and configure your colors and typography to create a cohesive design system.
 
