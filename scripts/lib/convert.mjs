@@ -39,12 +39,14 @@ function expandVideoCard( id, title, desc ) {
 function videoCardToMd( block ) {
 	if (
 		! block.attrs ||
-		! block.attrs.includes( '"name":"Video Box"' ) ||
-		! block.attrs.includes( 'ollie-video' )
+		! block.attrs.includes( '"ollieVideoModal":true' ) ||
+		! block.fullRaw.includes( '"name":"Video Box"' )
 	) {
 		return null;
 	}
-	const id = block.attrs.match( /"anchor":"([^"]+)"/ )?.[ 1 ];
+	const id = block.attrs.match(
+		/"ollieVideoUrl":"https:\/\/www\.youtube\.com\/watch\?v=([A-Za-z0-9_-]+)"/
+	)?.[ 1 ];
 	const title = block.fullRaw.match(
 		/<h4 class="wp-block-heading has-primary-font-family has-small-font-size">([^<]+)<\/h4>/
 	)?.[ 1 ];
@@ -325,7 +327,7 @@ const CONVERTERS = {
 	code: codeToMd,
 	separator: separatorToMd,
 	table: tableToMd,
-	group: videoCardToMd,
+	cover: videoCardToMd,
 };
 
 /**
