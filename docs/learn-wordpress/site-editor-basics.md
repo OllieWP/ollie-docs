@@ -6,11 +6,7 @@ order: 0
 excerpt: "Learn your way around the editor that powers every part of your Ollie site."
 ---
 
-<!-- wp:embed {"url":"https://www.youtube.com/watch?v=51-FInsYsGs","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->
-<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
-https://www.youtube.com/watch?v=51-FInsYsGs
-</div></figure>
-<!-- /wp:embed -->
+{{video id="51-FInsYsGs" title="Start Building with the Site Editor" desc="Learn your way around the WordPress site editor."}}
 
 The Site Editor is where you design everything in Ollie — pages, headers, footers, templates, styles, and menus — all with blocks, all visually. If you're coming from classic themes or page builders, this is the one concept to learn first: with a block theme like Ollie, your entire site is editable in one place.
 

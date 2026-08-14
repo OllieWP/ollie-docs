@@ -6,11 +6,7 @@ order: 2
 excerpt: "What patterns are, how synced patterns differ, and when to reach for each."
 ---
 
-<!-- wp:embed {"url":"https://www.youtube.com/watch?v=w8DehSH1_PA","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->
-<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
-https://www.youtube.com/watch?v=w8DehSH1_PA
-</div></figure>
-<!-- /wp:embed -->
+{{video id="w8DehSH1_PA" title="Everything About WordPress Patterns" desc="What patterns are and how to use them to build faster."}}
 
 Patterns are the fastest way to build in WordPress: pre-designed arrangements of blocks — a hero section, a pricing table, a testimonial row, even a full page — that you insert with one click and then customize like any other content. They're the core of the Ollie workflow, so it's worth understanding exactly how they behave.
 
@@ -28,11 +24,7 @@ Three ideas that sound similar but behave very differently:
 - **Synced patterns** — one shared source. Edit a synced pattern once and it updates *everywhere* it appears. Use them for content that must stay identical site-wide: a call-to-action banner, a promo strip, contact details.
 - **Templates** — the layout layer *around* your content: how single posts, archives, and pages are structured. Patterns fill content in; templates frame it.
 
-<!-- wp:embed {"url":"https://www.youtube.com/watch?v=xCbOq9e-L3c","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->
-<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
-https://www.youtube.com/watch?v=xCbOq9e-L3c
-</div></figure>
-<!-- /wp:embed -->
+{{video id="xCbOq9e-L3c" title="Build Smarter with Synced Patterns" desc="Keep repeated content in sync across your whole site."}}
 
 The mental model: **synced = one source of truth, unsynced = a smart starting point.** Reach for synced when a future edit must propagate; reach for regular patterns everywhere else.
 

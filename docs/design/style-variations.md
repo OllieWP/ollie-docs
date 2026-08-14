@@ -6,11 +6,7 @@ order: 0
 excerpt: "Change your site's entire look in one click with Ollie's style variations."
 ---
 
-<!-- wp:embed {"url":"https://www.youtube.com/watch?v=mePV-NJC_Ps","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->
-<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
-https://www.youtube.com/watch?v=mePV-NJC_Ps
-</div></figure>
-<!-- /wp:embed -->
+{{video id="mePV-NJC_Ps" title="Style Variations" desc="Change your entire site design in one click."}}
 
 Style variations let you completely change the look of your Ollie site — colors, typography, the whole personality — with one click, without touching a single block. Because Ollie is built on a design-token system, every pattern and page you've built re-themes itself instantly.
 

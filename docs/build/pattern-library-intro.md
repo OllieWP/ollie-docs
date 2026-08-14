@@ -6,11 +6,7 @@ order: 0
 excerpt: "Start building beautiful pages way faster with the Ollie Pro pattern library."
 ---
 
-<!-- wp:embed {"url":"https://www.youtube.com/watch?v=YhhGucYbkkE","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->
-<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
-https://www.youtube.com/watch?v=YhhGucYbkkE
-</div></figure>
-<!-- /wp:embed -->
+{{video id="YhhGucYbkkE" title="Working with the Pattern Library" desc="Browse, preview, and insert Ollie patterns."}}
 
 The flagship feature of Ollie Pro is our growing collection of expertly-crafted WordPress patterns. WordPress patterns are pre-designed components that make it easy and fun to create beautiful pages and posts quickly. Patterns can be as small as a call-to-action box, or as big as a full page layout. 
 

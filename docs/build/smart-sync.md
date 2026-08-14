@@ -6,11 +6,7 @@ order: 4
 excerpt: "Style one card, column, or slide — Smart Sync applies the change to all its siblings."
 ---
 
-<!-- wp:embed {"url":"https://www.youtube.com/watch?v=0OHoSuj4Mcw","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->
-<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
-https://www.youtube.com/watch?v=0OHoSuj4Mcw
-</div></figure>
-<!-- /wp:embed -->
+{{video id="0OHoSuj4Mcw" title="Smart Sync" desc="Design at light-speed with Ollie Pro's Smart Sync."}}
 
 Smart Sync is design at light speed: style one card in a row of pricing columns, one item in a grid, or one slide in a carousel — and the same change applies to all of its siblings automatically. Layout and style stay perfectly consistent, while every item keeps its own text, images, and links.
 

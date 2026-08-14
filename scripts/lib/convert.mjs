@@ -14,6 +14,48 @@
 const TOKEN_RE =
 	/<!--\s+(\/)?wp:([a-z][a-z0-9_/-]*)(\s+\{[\s\S]*?\})?\s+(\/)?-->/g;
 
+/*
+ * Video cards: docs write `{{video id="..." title="..." desc="..."}}` and
+ * the converter expands it from a single markup template — one place to
+ * restyle every card (a repo-side synced pattern; real synced patterns
+ * can't vary anchors per instance). The card opens the site's video modal
+ * on click anywhere in the card: the `ollie-video` class and the YouTube
+ * id anchor live on the outer group.
+ */
+import { readFileSync as _readFileSync } from 'node:fs';
+const VIDEO_CARD_TEMPLATE = _readFileSync(
+	new URL( './video-card-template.html', import.meta.url ),
+	'utf8'
+);
+const VIDEO_DIRECTIVE_RE =
+	/^\{\{video id="([^"\s]+)" title="([^"]+)" desc="([^"]+)"\}\}\s*$/;
+
+function expandVideoCard( id, title, desc ) {
+	return VIDEO_CARD_TEMPLATE.replaceAll( '%%ID%%', id )
+		.replaceAll( '%%TITLE%%', title )
+		.replaceAll( '%%DESC%%', desc );
+}
+
+function videoCardToMd( block ) {
+	if (
+		! block.attrs ||
+		! block.attrs.includes( '"name":"Video Box"' ) ||
+		! block.attrs.includes( 'ollie-video' )
+	) {
+		return null;
+	}
+	const id = block.attrs.match( /"anchor":"([^"]+)"/ )?.[ 1 ];
+	const title = block.fullRaw.match(
+		/<h4 class="wp-block-heading has-primary-font-family has-small-font-size">([^<]+)<\/h4>/
+	)?.[ 1 ];
+	const desc = block.fullRaw.match(
+		/<p class="has-main-color has-text-color has-link-color has-x-small-font-size">([^<]+)<\/p>/
+	)?.[ 1 ];
+	if ( ! id || ! title || ! desc ) return null;
+	if ( [ id, title, desc ].some( ( s ) => s.includes( '"' ) ) ) return null;
+	return `{{video id="${ id }" title="${ title }" desc="${ desc }"}}`;
+}
+
 /** Split serialized block content into top-level blocks. */
 export function parseBlocks( html ) {
 	const blocks = [];
@@ -283,6 +325,7 @@ const CONVERTERS = {
 	code: codeToMd,
 	separator: separatorToMd,
 	table: tableToMd,
+	group: videoCardToMd,
 };
 
 /**
@@ -368,6 +411,14 @@ export function markdownToBlocks( md ) {
 	while ( i < lines.length ) {
 		const line = lines[ i ];
 		if ( line.trim() === '' ) {
+			i++;
+			continue;
+		}
+
+		// Video card directive expands from the shared template.
+		const video = line.match( VIDEO_DIRECTIVE_RE );
+		if ( video ) {
+			out.push( expandVideoCard( video[ 1 ], video[ 2 ], video[ 3 ] ) );
 			i++;
 			continue;
 		}

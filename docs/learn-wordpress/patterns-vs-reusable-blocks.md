@@ -126,11 +126,7 @@ Synced patterns are ideal for content that needs to be identical everywhere it a
 
 Synced patterns make it easy for you to update these sections on your site. You do it once, and the change applies everywhere the pattern is used. Here’s our <a href="https://www.youtube.com/watch?v=xCbOq9e-L3c" target="_blank" rel="noopener" title=""><u>synced patterns walkthrough video</u></a> that is worth watching if you want to see how they work in practice.
 
-<!-- wp:embed {"url":"https://www.youtube.com/watch?v=xCbOq9e-L3c","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->
-<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
-https://www.youtube.com/watch?v=xCbOq9e-L3c
-</div></figure>
-<!-- /wp:embed -->
+{{video id="xCbOq9e-L3c" title="Build Smarter with Synced Patterns" desc="Keep repeated content in sync across your whole site."}}
 
 ### Partially vs fully synced patterns
 

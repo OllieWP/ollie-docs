@@ -6,11 +6,7 @@ order: 3
 excerpt: "Build hero sliders, testimonials, logo marquees, and dynamic post carousels with blocks."
 ---
 
-<!-- wp:embed {"url":"https://www.youtube.com/watch?v=rXw5i0P7_uw","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->
-<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
-https://www.youtube.com/watch?v=rXw5i0P7_uw
-</div></figure>
-<!-- /wp:embed -->
+{{video id="rXw5i0P7_uw" title="Carousel Designer" desc="Create beautiful carousels faster in WordPress."}}
 
 The Ollie Carousel is a block-native carousel suite included with Ollie Pro. Build hero sliders, testimonials, logo marquees, video carousels, and self-updating post carousels — all inside the block editor, using any blocks you like.
 

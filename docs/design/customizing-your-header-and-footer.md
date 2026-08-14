@@ -6,11 +6,7 @@ order: 3
 excerpt: "Edit, restyle, or completely swap your site's header and footer designs."
 ---
 
-<!-- wp:embed {"url":"https://www.youtube.com/watch?v=sp3gZha1gRY","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->
-<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
-https://www.youtube.com/watch?v=sp3gZha1gRY
-</div></figure>
-<!-- /wp:embed -->
+{{video id="sp3gZha1gRY" title="Change Your Header and Footer" desc="Quickly customize headers and footers in block themes."}}
 
 Your header and footer appear on every page, so they're usually the first thing to make your own. In Ollie they're **template parts** — reusable sections shared across all your templates — which means you edit them once and the change applies everywhere, instantly.
 

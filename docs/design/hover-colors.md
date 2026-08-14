@@ -6,11 +6,7 @@ order: 7
 excerpt: "Add hover text, background, and border colors to any block, with full transition control."
 ---
 
-<!-- wp:embed {"url":"https://www.youtube.com/watch?v=MgwhOSMA1zs","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->
-<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
-https://www.youtube.com/watch?v=MgwhOSMA1zs
-</div></figure>
-<!-- /wp:embed -->
+{{video id="MgwhOSMA1zs" title="Hover Colors" desc="Add hover states to any block, no code required."}}
 
 Hover Colors lets you change a block's text, background, and border colors when visitors hover over it — the finishing touch that makes buttons, cards, and links feel alive. WordPress doesn't offer hover states out of the box; this extension adds them right where you'd expect to find them.
 

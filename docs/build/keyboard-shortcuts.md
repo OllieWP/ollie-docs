@@ -6,11 +6,7 @@ order: 13
 excerpt: "Navigate nested block layouts at speed with parent and tree-traversal shortcuts."
 ---
 
-<!-- wp:embed {"url":"https://www.youtube.com/watch?v=QYvOZf4dyTI","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->
-<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
-https://www.youtube.com/watch?v=QYvOZf4dyTI
-</div></figure>
-<!-- /wp:embed -->
+{{video id="QYvOZf4dyTI" title="Keyboard Shortcuts" desc="Navigate nested layouts at speed."}}
 
 Keyboard Shortcuts adds block-tree navigation to the editor, so you can fly through nested layouts — groups inside columns inside covers — without reaching for the mouse or opening List View.
 

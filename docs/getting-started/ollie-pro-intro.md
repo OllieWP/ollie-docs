@@ -6,11 +6,7 @@ order: 1
 excerpt: "Learn everything you need to know about Ollie Pro and your Ollie Pro account."
 ---
 
-<!-- wp:embed {"url":"https://www.youtube.com/watch?v=aCgKQAPali0","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->
-<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
-https://www.youtube.com/watch?v=aCgKQAPali0
-</div></figure>
-<!-- /wp:embed -->
+{{video id="aCgKQAPali0" title="Ollie Pro Walkthrough" desc="Take a tour of Ollie Pro and see how it all fits together."}}
 
 <a href="https://olliewp.com/pro/" data-type="page" data-id="57033">Ollie Pro</a> is a premium plugin that adds **even more** WordPress patterns to your site via a cloud pattern library with an intuitive interface. That means you can build more websites even faster by mixing and matching hundreds of patterns and layouts.
 

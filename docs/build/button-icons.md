@@ -6,11 +6,7 @@ order: 10
 excerpt: "Add crisp icons to Button blocks from a built-in library or your own custom SVG."
 ---
 
-<!-- wp:embed {"url":"https://www.youtube.com/watch?v=I3aaK-ORNTU","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->
-<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
-https://www.youtube.com/watch?v=I3aaK-ORNTU
-</div></figure>
-<!-- /wp:embed -->
+{{video id="I3aaK-ORNTU" title="Button Icons" desc="Add crisp icons to your Button blocks."}}
 
 Button Icons adds crisp, scalable icons to the WordPress Button block — arrows for calls to action, a download icon for files, a play icon for videos — straight from the button's settings.
 

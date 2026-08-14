@@ -6,11 +6,7 @@ order: 1
 excerpt: "Connect Claude or your favorite AI agent to your site and build pages with natural language."
 ---
 
-<!-- wp:embed {"url":"https://www.youtube.com/watch?v=srFsIq5gPCQ","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->
-<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
-https://www.youtube.com/watch?v=srFsIq5gPCQ
-</div></figure>
-<!-- /wp:embed -->
+{{video id="srFsIq5gPCQ" title="Introducing Ollie AI" desc="AI-powered patterns and MCP for WordPress."}}
 
 The Ollie MCP connects your AI agent — Claude, Cursor, VS Code, or any MCP-capable tool — directly to your WordPress site. Once connected, your agent can build pages from Ollie patterns, adjust designs, change colors, and edit content, all through conversation: "create a new pricing page on my site," and moments later it's there, built from a professionally designed pattern and ready to refine.
 
@@ -28,11 +24,7 @@ Everything an agent builds is validated against Ollie's design system: colors, f
 
 ## Setup
 
-<!-- wp:embed {"url":"https://www.youtube.com/watch?v=FZHKmLdK7co","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->
-<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
-https://www.youtube.com/watch?v=FZHKmLdK7co
-</div></figure>
-<!-- /wp:embed -->
+{{video id="FZHKmLdK7co" title="Ollie MCP Setup" desc="Connect Claude or Cursor to your site, step by step."}}
 
 Connecting an MCP is admittedly a bit manual right now — that's the current state of MCPs everywhere, not an Ollie quirk. The guided setup walks you through it:
 

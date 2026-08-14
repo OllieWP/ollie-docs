@@ -118,8 +118,4 @@ Ollie was created by&nbsp;[Mike McAlister](https://mikemcalister.com/)&nbsp;and&
 
 Want to go deeper than using block themes — and learn how they're actually built? Our free WordPress Block Theme Development course walks through building a complete block theme from scratch:
 
-<!-- wp:embed {"url":"https://www.youtube.com/watch?v=2DgZd9BQljI","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->
-<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
-https://www.youtube.com/watch?v=2DgZd9BQljI
-</div></figure>
-<!-- /wp:embed -->
+{{video id="2DgZd9BQljI" title="Block Theme Development Course" desc="Our free course on building block themes from scratch."}}

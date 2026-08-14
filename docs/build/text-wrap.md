@@ -6,11 +6,7 @@ order: 11
 excerpt: "Fix orphaned words and ragged headlines with one-click Pretty and Balance wrapping."
 ---
 
-<!-- wp:embed {"url":"https://www.youtube.com/watch?v=6AMw_M8xWUk","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->
-<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
-https://www.youtube.com/watch?v=6AMw_M8xWUk
-</div></figure>
-<!-- /wp:embed -->
+{{video id="6AMw_M8xWUk" title="Text Wrap" desc="Fix orphaned words and ragged headlines in one click."}}
 
 Text Wrap fixes the small typographic annoyances that make otherwise-great designs look off: a single orphaned word on its own line, or a headline that breaks into wildly uneven lines. It puts modern CSS text-wrapping — the kind print designers have always had — one click away in the block toolbar.
 

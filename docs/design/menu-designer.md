@@ -6,11 +6,7 @@ order: 4
 excerpt: "Design dropdown menus, mega menus, and mobile menus with any WordPress block."
 ---
 
-<!-- wp:embed {"url":"https://www.youtube.com/watch?v=UXWOafpBn38","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->
-<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
-https://www.youtube.com/watch?v=UXWOafpBn38
-</div></figure>
-<!-- /wp:embed -->
+{{video id="UXWOafpBn38" title="Menu Designer Tutorial" desc="Build dropdown, mega, and mobile menus with blocks."}}
 
 Menu Designer brings real design freedom to WordPress navigation. Dropdown menus, mega menus, and mobile menus become block canvases — build them with images, buttons, columns, forms, product grids, or any other block, using the same editor you design pages with. No separate menu interface, no settings maze, no code.
 

@@ -6,11 +6,7 @@ order: 5
 excerpt: "Add custom responsive breakpoints to WordPress Grid layouts — no CSS required."
 ---
 
-<!-- wp:embed {"url":"https://www.youtube.com/watch?v=PHjaO4uOwxE","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->
-<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
-https://www.youtube.com/watch?v=PHjaO4uOwxE
-</div></figure>
-<!-- /wp:embed -->
+{{video id="PHjaO4uOwxE" title="Advanced Grid Controls" desc="Responsive breakpoints for WordPress grids."}}
 
 Advanced Grid Controls adds real responsive breakpoints to the WordPress Grid layout. Core grids give you one configuration for every screen size; this extension lets you say "4 columns on desktop, 2 below 1024px, 1 below 600px" — the control CSS developers have, without the CSS.
 

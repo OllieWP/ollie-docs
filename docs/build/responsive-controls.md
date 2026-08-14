@@ -6,11 +6,7 @@ order: 8
 excerpt: "Set per-device font sizes, spacing, and alignment right from the editor's device preview."
 ---
 
-<!-- wp:embed {"url":"https://www.youtube.com/watch?v=5Wv_3MfU7ws","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->
-<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
-https://www.youtube.com/watch?v=5Wv_3MfU7ws
-</div></figure>
-<!-- /wp:embed -->
+{{video id="5Wv_3MfU7ws" title="Responsive Controls" desc="Per-device typography and spacing controls."}}
 
 Responsive Controls brings per-device settings to the block editor — the feature WordPress users have wanted forever. Set your typography and spacing for desktop, then switch the editor's device preview to Tablet or Mobile and set different values for smaller screens. No custom CSS, no media queries.
 

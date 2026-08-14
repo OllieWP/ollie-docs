@@ -6,11 +6,7 @@ order: 2
 excerpt: "Turn any design into a reusable pattern — or a time-saving text snippet."
 ---
 
-<!-- wp:embed {"url":"https://www.youtube.com/watch?v=pWpnMD2MX7w","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->
-<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
-https://www.youtube.com/watch?v=pWpnMD2MX7w
-</div></figure>
-<!-- /wp:embed -->
+{{video id="pWpnMD2MX7w" title="Design Your Own Patterns" desc="Design WordPress patterns with the block editor."}}
 
 Ollie's built-in patterns get you far, but the real workflow unlock is making your own. Any design you build once — a section you're proud of, a layout your site repeats, a snippet you type constantly — can become a pattern you insert anywhere in two clicks.
 
@@ -27,11 +23,7 @@ You can manage everything you've created — rename, edit, delete, and toggle sy
 
 ## Patterns as Text Snippets
 
-<!-- wp:embed {"url":"https://www.youtube.com/watch?v=1qJUG0WAUyU","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->
-<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
-https://www.youtube.com/watch?v=1qJUG0WAUyU
-</div></figure>
-<!-- /wp:embed -->
+{{video id="1qJUG0WAUyU" title="Patterns as Text Snippets" desc="Reuse text snippets anywhere with patterns."}}
 
 Patterns don't have to be big designs — they can be tiny and text-only, which turns them into a snippet system. A disclosure paragraph, a standard call-to-action line, your affiliate disclaimer, a signature block: save each as a small pattern and insert it by typing **/** and the pattern's name in any empty paragraph.
 

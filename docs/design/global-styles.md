@@ -6,11 +6,7 @@ order: 1
 excerpt: "Set typography, colors, and spacing once and cascade them across your whole site."
 ---
 
-<!-- wp:embed {"url":"https://www.youtube.com/watch?v=6RavZxNFy2Y","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->
-<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
-https://www.youtube.com/watch?v=6RavZxNFy2Y
-</div></figure>
-<!-- /wp:embed -->
+{{video id="6RavZxNFy2Y" title="Customize Your Theme with Global Styles" desc="Set colors, typography, and spacing site-wide."}}
 
 Global Styles is the command center for your site's entire visual language. Define your typography, colors, and spacing once, and those choices cascade through everything — every heading, button, pattern, and template on your site. Change your brand color and watch hundreds of pages update instantly. No CSS, no hunting through pages.
 
@@ -28,11 +24,7 @@ In the Site Editor (**Appearance → Editor**), click the **Styles** icon (the h
 
 If you've worked with professional design tools, this is design tokens for WordPress. Your styles are the single source of truth; patterns act like a library of smart components that inherit them automatically. Insert any Ollie pattern and it arrives already matching your brand — because it was built against the token slots, not specific colors and fonts.
 
-<!-- wp:embed {"url":"https://www.youtube.com/watch?v=kC_85zuSnr4","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->
-<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
-https://www.youtube.com/watch?v=kC_85zuSnr4
-</div></figure>
-<!-- /wp:embed -->
+{{video id="kC_85zuSnr4" title="WordPress as a Design System" desc="Use full site editing as a no-code design system."}}
 
 The practical payoff: perfect consistency across hundreds of pages, and global redesigns in seconds. Rebrand from blue to green, swap serif for sans, tighten your spacing scale — each is one change in one place.
 

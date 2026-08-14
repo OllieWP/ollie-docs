@@ -6,11 +6,7 @@ order: 12
 excerpt: "Manage reusable CSS classes with a real editor for base, hover, and responsive styles."
 ---
 
-<!-- wp:embed {"url":"https://www.youtube.com/watch?v=z3fcun2hiOM","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->
-<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
-https://www.youtube.com/watch?v=z3fcun2hiOM
-</div></figure>
-<!-- /wp:embed -->
+{{video id="z3fcun2hiOM" title="CSS Class Manager" desc="Professional CSS control in the block editor."}}
 
 Class Manager turns WordPress's plain "Additional CSS class(es)" text field into a real styling system: a searchable library of reusable classes, applied as neat removable tags, each with its own CSS you write once and use anywhere — including hover, focus, and responsive styles.
 

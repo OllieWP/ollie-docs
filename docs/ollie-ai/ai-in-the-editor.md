@@ -6,11 +6,7 @@ order: 0
 excerpt: "AI writing and design tools built right into the editor — rewrite, generate, and design with prompts."
 ---
 
-<!-- wp:embed {"url":"https://www.youtube.com/watch?v=eTP4KfJb9PQ","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->
-<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
-https://www.youtube.com/watch?v=eTP4KfJb9PQ
-</div></figure>
-<!-- /wp:embed -->
+{{video id="eTP4KfJb9PQ" title="AI-Powered Content and Design" desc="AI writing and design, right inside the editor."}}
 
 Ollie AI is a growing suite of AI design and content tools built right into the WordPress editor. Instead of copying your page into a chat app and pasting results back, you work where the work is: select text and rewrite it, generate new content in place, and pull in designed sections — all through simple prompts, all grounded in your brand's context.
 

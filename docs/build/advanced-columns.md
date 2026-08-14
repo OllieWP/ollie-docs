@@ -6,11 +6,7 @@ order: 6
 excerpt: "Control the exact order your columns stack in on mobile devices."
 ---
 
-<!-- wp:embed {"url":"https://www.youtube.com/watch?v=bAh5h221qiw","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->
-<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
-https://www.youtube.com/watch?v=bAh5h221qiw
-</div></figure>
-<!-- /wp:embed -->
+{{video id="bAh5h221qiw" title="Advanced Column Controls" desc="Control how your columns stack on mobile."}}
 
 Advanced Column Controls solves one of the block editor's oldest annoyances: when columns stack on mobile, they always stack in source order — even when that puts the wrong thing first. This extension lets you control exactly what order columns appear in on small screens.
 

@@ -6,11 +6,7 @@ order: 7
 excerpt: "Clickable group cards, mobile row stacking, and smarter sticky headers for Group blocks."
 ---
 
-<!-- wp:embed {"url":"https://www.youtube.com/watch?v=x2iPdgkgzfM","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->
-<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
-https://www.youtube.com/watch?v=x2iPdgkgzfM
-</div></figure>
-<!-- /wp:embed -->
+{{video id="x2iPdgkgzfM" title="Advanced Group Controls" desc="Clickable cards, row stacking, and smarter sticky headers."}}
 
 Advanced Group Controls gives the humble Group block three superpowers: whole-block links (think clickable cards), smarter mobile stacking for rows, and professional sticky-positioning behaviors.
 

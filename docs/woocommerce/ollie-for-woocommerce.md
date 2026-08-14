@@ -6,11 +6,7 @@ order: 0
 excerpt: "Block-built store templates, shop patterns, and one-click product card layouts."
 ---
 
-<!-- wp:embed {"url":"https://www.youtube.com/watch?v=HGLiBGZMOG0","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->
-<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
-https://www.youtube.com/watch?v=HGLiBGZMOG0
-</div></figure>
-<!-- /wp:embed -->
+{{video id="HGLiBGZMOG0" title="Ollie and WooCommerce" desc="Design faster and sell more with Ollie."}}
 
 Ollie ships complete WooCommerce support: a full set of block-built store templates, professionally designed shop patterns, one-click product card layouts, and all of Ollie Pro's design tools working seamlessly with your products. Build a modern, blazing-fast store in the native block editor — no page builder, no code.
 

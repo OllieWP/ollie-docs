@@ -6,11 +6,7 @@ order: 9
 excerpt: "Turn Cover and Button blocks into click-to-play video lightboxes."
 ---
 
-<!-- wp:embed {"url":"https://www.youtube.com/watch?v=BTf3XX68-5I","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->
-<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
-https://www.youtube.com/watch?v=BTf3XX68-5I
-</div></figure>
-<!-- /wp:embed -->
+{{video id="BTf3XX68-5I" title="Video Modal" desc="Turn covers and buttons into click-to-play videos."}}
 
 Video Modal turns a Cover or Button block into a click-to-play video launcher. Visitors click your beautifully designed cover image or button, and the video opens in a clean, accessible lightbox — no cluttered inline embeds, no leaving the page.
 
