@@ -6,8 +6,6 @@ order: 1
 excerpt: "Learn the basics of WordPress block themes and how to build with them."
 ---
 
-{{video id="D7GUoX2XU1k" title="WordPress Block Theme Introduction" desc="Learn all about block themes and the new WordPress features."}}
-
 The free Ollie block theme is the foundation everything else builds on: a beautifully designed, blazing-fast WordPress theme made for the site editor. This doc covers the modern WordPress features Ollie is built on — the site editor, patterns, style variations, and global styles.
 
 **Installing Ollie:** in your WordPress admin, go to **Appearance → Themes → Add New**, search for "Ollie," then install and activate it. You can also [download the theme](https://olliewp.com/download/) and upload it manually.
