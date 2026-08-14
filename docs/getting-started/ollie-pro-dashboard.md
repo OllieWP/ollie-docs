@@ -30,7 +30,7 @@ Using the Sign In link in the Ollie Pro dashboard header, you can sign in to you
 
 ## Ollie Pro Setup Wizard
 
-{{video id="-QEqJlNtX3c" title="Ollie Pro Setup Wizard" desc="Create a beautiful, blazing-fast website in minutes with the Ollie Setup Wizard."}}
+{{video id="-QEqJlNtX3c" start="60" title="Ollie Pro Setup Wizard" desc="Create a beautiful, blazing-fast website in minutes with the Ollie Setup Wizard."}}
 
 The Ollie Pro setup wizard is designed to get you from a blank WordPress install to a fully-configured, beautiful website in just a few minutes. Instead of jumping around different WordPress admin screens to handle all those tedious setup tasks, our wizard streamlines everything into one guided experience.
 
@@ -44,7 +44,7 @@ By the time you complete the wizard, you'll have a professional, responsive webs
 
 ## Starter Sites
 
-{{video id="-QEqJlNtX3c" start="54" title="Ollie Pro Starter Site" desc="Save hours of time by starting your site with an Ollie Pro starter site to get up and running quickly."}}
+{{video id="-QEqJlNtX3c" start="464" title="Ollie Pro Starter Site" desc="Save hours of time by starting your site with an Ollie Pro starter site to get up and running quickly."}}
 
 While the setup wizard is already a huge time-saver, starter sites take convenience to the next level by doing virtually everything automatically. With just a couple of clicks, starter sites will install essential plugins, import beautifully designed pages, set up templates, and configure your colors and typography to create a cohesive design system.
 
