@@ -12,12 +12,8 @@ The free Ollie block theme is the foundation everything else builds on: a beauti
 
 Once you activate Ollie, it will largely behave like any other traditional WordPress theme. You can create posts and pages just like you always have. However, as a block theme, Ollie also supports powerful new features like the site editor, patterns, global styles, and more. This means you get the familiarity of traditional WordPress themes combined with the enhanced flexibility and customization options that come with modern block-based design.
 
-<!-- wp:separator {"className":"is-style-separator-thin","style":{"spacing":{"margin":{"top":"var:preset|spacing|large","bottom":"var:preset|spacing|large"}}},"backgroundColor":"main-accent"} -->
-<hr class="wp-block-separator has-text-color has-main-accent-color has-alpha-channel-opacity has-main-accent-background-color has-background is-style-separator-thin" style="margin-top:var(--wp--preset--spacing--large);margin-bottom:var(--wp--preset--spacing--large)"/>
-<!-- /wp:separator -->
-
-<!-- wp:heading -->
-<h2 class="wp-block-heading" id="block-theme-intro">Block Theme Intro</h2>
+<!-- wp:heading {"anchor":"block-theme-intro"} -->
+<h2 id="block-theme-intro" class="wp-block-heading">Block Theme Intro</h2>
 <!-- /wp:heading -->
 
 {{video id="D7GUoX2XU1k" title="What is a block theme?" desc="Learn all about block themes and dig into all of the new features in WordPress."}}
@@ -32,8 +28,8 @@ You can easily rearrange and style sections of your site, use pre-designed patte
 <hr class="wp-block-separator has-text-color has-main-accent-color has-alpha-channel-opacity has-main-accent-background-color has-background is-style-separator-thin" style="margin-top:var(--wp--preset--spacing--large);margin-bottom:var(--wp--preset--spacing--large)"/>
 <!-- /wp:separator -->
 
-<!-- wp:heading -->
-<h2 class="wp-block-heading" id="site-editor"><a href="https://github.com/OllieWP/ollie#site-editor"></a>Site Editor</h2>
+<!-- wp:heading {"anchor":"site-editor"} -->
+<h2 id="site-editor" class="wp-block-heading"><a href="https://github.com/OllieWP/ollie#site-editor"></a>Site Editor</h2>
 <!-- /wp:heading -->
 
 {{video id="51-FInsYsGs" title="Site Editor 101" desc="Learn about the Site Editor interface, patterns, global styles, templates, and more."}}
@@ -52,8 +48,8 @@ The Site Editor also offers live previews, so you can see your changes in real-t
 <hr class="wp-block-separator has-text-color has-main-accent-color has-alpha-channel-opacity has-main-accent-background-color has-background is-style-separator-thin" style="margin-top:var(--wp--preset--spacing--large);margin-bottom:var(--wp--preset--spacing--large)"/>
 <!-- /wp:separator -->
 
-<!-- wp:heading -->
-<h2 class="wp-block-heading" id="patterns">Patterns</h2>
+<!-- wp:heading {"anchor":"patterns"} -->
+<h2 id="patterns" class="wp-block-heading">Patterns</h2>
 <!-- /wp:heading -->
 
 {{video id="w8DehSH1_PA" title="WordPress Patterns" desc="Learn how to create and modify patterns with Ollie and the WordPress Site Editor."}}
@@ -68,8 +64,8 @@ You can access Ollie’s patterns via the block inserter on posts, pages, or in 
 <hr class="wp-block-separator has-text-color has-main-accent-color has-alpha-channel-opacity has-main-accent-background-color has-background is-style-separator-thin" style="margin-top:var(--wp--preset--spacing--large);margin-bottom:var(--wp--preset--spacing--large)"/>
 <!-- /wp:separator -->
 
-<!-- wp:heading -->
-<h2 class="wp-block-heading" id="style-variations">Style Variations</h2>
+<!-- wp:heading {"anchor":"style-variations"} -->
+<h2 id="style-variations" class="wp-block-heading">Style Variations</h2>
 <!-- /wp:heading -->
 
 <!-- wp:image {"lightbox":{"enabled":true},"id":58551,"sizeSlug":"full","linkDestination":"none","className":"is-style-media-boxed"} -->
@@ -106,8 +102,8 @@ The Creator, Studio, and Startup style variations are used to style the respecti
 <hr class="wp-block-separator has-text-color has-main-accent-color has-alpha-channel-opacity has-main-accent-background-color has-background is-style-separator-thin" style="margin-top:var(--wp--preset--spacing--large);margin-bottom:var(--wp--preset--spacing--large)"/>
 <!-- /wp:separator -->
 
-<!-- wp:heading -->
-<h2 class="wp-block-heading" id="global-styles">Global Styles</h2>
+<!-- wp:heading {"anchor":"global-styles"} -->
+<h2 id="global-styles" class="wp-block-heading">Global Styles</h2>
 <!-- /wp:heading -->
 
 {{video id="6RavZxNFy2Y" title="Global Styles Tutorial" desc="Quickly and easily change your site's fonts, colors, typography and more with global styles."}}
