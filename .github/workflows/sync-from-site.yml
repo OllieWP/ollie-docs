@@ -1,0 +1,64 @@
+name: Sync from site
+
+# Triggered by the "Sync to repo" button in the olliewp.com doc editor
+# (Website Enhancer calls workflow_dispatch), or manually from the Actions
+# tab. Exports the doc (or everything) from the live site and commits it.
+
+on:
+  workflow_dispatch:
+    inputs:
+      post_id:
+        description: "Doc post id to export (empty = export everything)"
+        required: false
+        type: string
+      post_title:
+        description: "Doc title, used in the commit message"
+        required: false
+        type: string
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sync-from-site
+  cancel-in-progress: false
+
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Write .env from secrets
+        run: |
+          {
+            echo "WP_URL=${{ secrets.WP_URL }}"
+            echo "WP_USER=${{ secrets.WP_USER }}"
+            echo "WP_APP_PASSWORD=\"${{ secrets.WP_APP_PASSWORD }}\""
+          } > .env
+
+      - name: Export from site
+        run: |
+          if [ -n "${{ inputs.post_id }}" ]; then
+            node scripts/export.mjs --doc=${{ inputs.post_id }}
+          else
+            node scripts/export.mjs
+          fi
+          rm .env
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "olliewp-docs-sync"
+          git config user.email "docs-sync@olliewp.com"
+          git add docs pages
+          if git diff --cached --quiet; then
+            echo "No changes — site and repo already in sync."
+          else
+            TITLE="${{ inputs.post_title }}"
+            git commit -m "Sync from wp-admin${TITLE:+: $TITLE}"
+            git push
+          fi

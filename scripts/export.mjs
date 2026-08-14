@@ -19,6 +19,13 @@ import {
 } from './lib/convert.mjs';
 import { fetchAllDocs, wpFetch, ROOT } from './lib/wp.mjs';
 
+// --doc=<id> limits the export to a single doc (used by the sync-from-site
+// GitHub Action for tight, reviewable commits). Hierarchy still loads in
+// full so the file path resolves correctly.
+const onlyDoc = Number(
+	process.argv.find( ( a ) => a.startsWith( '--doc=' ) )?.slice( 6 ) ?? 0
+);
+
 const docs = await fetchAllDocs();
 const byId = new Map( docs.map( ( d ) => [ d.id, d ] ) );
 const hasChildren = new Set( docs.map( ( d ) => d.parent ).filter( Boolean ) );
@@ -27,6 +34,9 @@ let converted = 0;
 let rawFallback = 0;
 
 for ( const doc of docs ) {
+	if ( onlyDoc && doc.id !== onlyDoc ) {
+		continue;
+	}
 	if ( ! doc.slug ) {
 		console.warn(
 			`! Skipping doc ${ doc.id } (${ doc.status }) — it has no slug (empty draft?).`
@@ -78,8 +88,10 @@ for ( const doc of docs ) {
 }
 
 // Tracked pages: any file already in pages/ is refreshed from the site.
+// Skipped in single-doc mode.
 const pagesDir = join( ROOT, 'pages' );
 try {
+	if ( onlyDoc ) throw Object.assign( new Error( 'skip' ), { code: 'ENOENT' } );
 	for ( const file of readdirSync( pagesDir ) ) {
 		if ( ! file.endsWith( '.md' ) ) continue;
 		const path = join( pagesDir, file );
