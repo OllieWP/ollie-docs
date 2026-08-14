@@ -6,11 +6,7 @@ order: 2
 excerpt: "How Ollie's smart color palette keeps every pattern and page in perfect sync."
 ---
 
-<!-- wp:embed {"url":"https://youtu.be/5w260Nu5bGU","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->
-<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
-https://youtu.be/5w260Nu5bGU
-</div></figure>
-<!-- /wp:embed -->
+{{video id="5w260Nu5bGU" title="Design with the Ollie Color Palette" desc="Design like a pro with Ollie's smart color palette."}}
 
 The power of WordPress's full-site editing paradigm is that it gives you the power to create a powerful, yet practical, design system on your site. 
 

@@ -6,11 +6,7 @@ order: 3
 excerpt: "Explore the Ollie Pro extensions that supercharge the WordPress block editor."
 ---
 
-<!-- wp:embed {"url":"https://youtu.be/qq2DLc43pTk","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->
-<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
-https://youtu.be/qq2DLc43pTk
-</div></figure>
-<!-- /wp:embed -->
+{{video id="qq2DLc43pTk" title="Introducing Ollie Pro Extensions" desc="Supercharge your WordPress block editor with Ollie Pro extensions."}}
 
 Ollie Pro Extensions are powerful enhancements that supercharge your existing WordPress blocks with professional-grade capabilities. Think of them as add-ons that extend the functionality of the blocks you already know and love, giving you more control, more options, and more creative freedom—all without leaving the native WordPress interface.
 
