@@ -21,6 +21,8 @@ Insert the **Carousel** block from the inserter (search "Carousel"). You'll see 
 
 You can also insert any premade carousel from the pattern library or the WordPress inserter's Patterns tab at any time.
 
+{{video id="rXw5i0P7_uw" start="45" title="Adding Your First Carousel" desc="Insert the Carousel block and pick a pre-made design."}}
+
 ## The Blocks
 
 The carousel is made of four blocks that work together:
@@ -49,11 +51,15 @@ Select the **Carousel Slides** block to find the Carousel Settings panel. As a s
 
 Slides automatically stretch to match the tallest slide in view, so cards with different amounts of content stay equal in height. At one slide per view, the carousel adapts its height to each slide instead.
 
+{{video id="rXw5i0P7_uw" start="169" title="Core Carousel Settings" desc="Slides per view, slides to scroll, max width, and speed."}}
+
 ### Smart Sync
 
 **Smart Sync slides** keeps every slide's design in lockstep. With it enabled, structural and style changes you make to one slide — moving a block, changing spacing, restyling a heading, reordering columns — automatically apply to every other slide. Each slide keeps its own text, images, and links, so you design once and write everywhere.
 
 Smart Sync is on by default for new carousels. Content edits (typing, swapping an image) never sync — only layout and style changes do.
+
+{{video id="rXw5i0P7_uw" start="195" title="Smart Sync in Action" desc="Edit every slide at once while each keeps its own content."}}
 
 ### Autoplay
 
@@ -62,6 +68,8 @@ Smart Sync is on by default for new carousels. Content edits (typing, swapping a
 - **Pause on hover** — pauses autoplay while the pointer is over the carousel.
 
 Visitors always stay in control: interacting with the carousel pauses stepped autoplay, a Pause navigation button can be added anywhere, and autoplay is disabled automatically for visitors with reduced motion enabled.
+
+{{video id="rXw5i0P7_uw" start="362" title="Autoplay, Loop, and Fade" desc="Autoplay styles, infinite looping, and edge fading."}}
 
 ### Behavior and Effects
 
@@ -79,6 +87,8 @@ Scroll to the end of the slide track in the editor and you'll find two buttons:
 - **Add New Slide** — adds a blank slide, ready for any blocks you like.
 - **Duplicate Previous** — copies your last slide so you can tweak the content and move on. This is the fastest way to build out a carousel: perfect one slide, then duplicate it for each entry.
 
+{{video id="rXw5i0P7_uw" start="280" title="Adding and Duplicating Slides" desc="Build out your carousel a slide at a time."}}
+
 ## Responsive Settings
 
 The carousel adapts per device, and you configure it using the editor's own device preview.
@@ -89,6 +99,8 @@ The carousel adapts per device, and you configure it using the editor's own devi
 4. Use the reset control on either slider to remove the override and return to inherited behavior.
 
 **How inheritance works:** tablet inherits your desktop settings unless you override it, and mobile shows one slide per view unless you set something else — so carousels collapse gracefully on phones without any configuration. On the frontend, tablet settings apply below 782px and mobile settings below 480px.
+
+{{video id="rXw5i0P7_uw" start="490" title="Responsive Settings in Action" desc="Tune slides per view for tablet and mobile."}}
 
 ## Navigation
 
@@ -110,6 +122,8 @@ Navigation placement uses familiar block tools:
 
 You can add multiple navigation blocks to one carousel — arrows up top and a scroll bar below, for example — and they all stay in sync automatically. Advancing with the arrows moves the scroll bar, and vice versa.
 
+{{video id="rXw5i0P7_uw" start="557" title="Custom Controls" desc="Arrows, dots, bars, and the draggable scroll bar."}}
+
 ## Dynamic Post Carousels
 
 Carousel slides can be generated from your content, like a query loop in carousel form.
@@ -122,6 +136,8 @@ Carousel slides can be generated from your content, like a query loop in carouse
 
 Publish a new post and the carousel updates itself — no editing required. Dynamic carousels are perfect for "Latest articles," related posts, portfolios, and product showcases.
 
+{{video id="rXw5i0P7_uw" start="446" title="Dynamic Post Carousels" desc="Pull in posts and custom post types automatically."}}
+
 ## Premade Designs
 
 Two buttons give you one-click access to professionally designed layouts:
@@ -130,6 +146,8 @@ Two buttons give you one-click access to professionally designed layouts:
 - **Choose Slide Design** — in the Slide block's Design panel. Opens the library to the Cards category and inserts the design into that slide, so you can mix premade cards into your own carousel.
 
 With Smart Sync enabled, a card design added to one slide can become the layout for all of them — add it, then let sync carry the design across.
+
+{{video id="rXw5i0P7_uw" start="709" title="Building from Card Patterns" desc="Go from blank page to a full carousel with card designs."}}
 
 ## Accessibility and Performance
 
