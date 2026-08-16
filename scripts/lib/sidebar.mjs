@@ -75,14 +75,29 @@ export function buildSidebar( sidebarRaw, sections ) {
 	}
 	const template = accordion.slice( ...itemSpan );
 
+	// The template is the first item, which carries openByDefault plus any
+	// styling (e.g. blockGap) added in the Site Editor. Preserve that
+	// styling on every item; only the open state varies.
+	const templateAttrs =
+		template.match( /^<!-- wp:accordion-item (\{[^\n]*\}) -->/ )?.[ 1 ] ?? '{}';
+	const closedAttrs = templateAttrs
+		.replace( /"openByDefault":true,?/, '' )
+		.replace( /,\}/, '}' )
+		.replace( /\{,/, '{' );
+	const openAttrs =
+		templateAttrs.includes( '"openByDefault":true' )
+			? templateAttrs
+			: templateAttrs.replace( '{', '{"openByDefault":true' + ( templateAttrs === '{}' ? '' : ',' ) );
+
 	const items = sections.map( ( section, i ) => {
 		let item = template;
 		// First section starts open; the rest start closed.
+		const attrs = i === 0 ? openAttrs : closedAttrs;
 		item = item.replace(
 			/^<!-- wp:accordion-item(?: \{[^\n]*\})? -->/,
-			i === 0
-				? '<!-- wp:accordion-item {"openByDefault":true} -->'
-				: '<!-- wp:accordion-item -->'
+			attrs === '{}'
+				? '<!-- wp:accordion-item -->'
+				: `<!-- wp:accordion-item ${ attrs } -->`
 		);
 		item = item.replace(
 			/class="wp-block-accordion-item(?: is-open)?"/,
