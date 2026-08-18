@@ -20,6 +20,26 @@ WordPress REST API (credentials in `.env`, already configured).
 - Videos: one-line directive `{{video id="YOUTUBE_ID" [start="SECONDS"]
   title="..." desc="..."}}` — expands to the synced Video Modal Card
   pattern (ref 67760, design edited in the Site Editor, not here).
+
+## Timestamped chapter cards
+
+When a doc has a matching feature video, don't stop at one lead card —
+add **chapter cards** that jump to where each topic appears in the video:
+
+1. Get the timestamped transcript. First stop: **Ollie Content Studio**
+   on the live site — `GET /wp-json/ocs/v1/campaigns` (same `.env`
+   credentials), find the campaign matching the feature by title, then
+   `GET /wp-json/ocs/v1/campaigns/<id>` and read the `source` field (or
+   the transcript artifact's `raw_transcript`) — it's WebVTT with
+   per-line timings. If no campaign exists, ask the user for a
+   transcript or chapter list.
+2. Map chapters to the doc's sections and place one card at the END of
+   each matching section: `{{video id="..." start="<seconds>"
+   title="<chapter>" desc="<one line>"}}`.
+3. Curate — lead card at top plus cards for the substantial sections
+   only. Skip intro/wrap-up chapters and minor beats whose sections are
+   short; a card under every heading is noise. Reference example:
+   `docs/build/carousel-designer.md`.
 - Raw `<!-- wp: -->` chunks in markdown are intentional designed layouts —
   edit text inside them, don't restructure.
 - The sidebar template part regenerates only when sections change;
